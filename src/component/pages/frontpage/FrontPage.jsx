@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Navbar from "./navbar/Navbar";
 
 export default function FrontPage() {
   return (
     <FrontPageStyled>
-      {/* <div className="nav">Navbar</div> */}
+      <Navbar />
       <div className="left-front-page">
         <video
           className="video"
@@ -46,15 +47,6 @@ const FrontPageStyled = styled.div`
   height: 99vh;
   display: flex;
   position: relative;
-
-  /* .nav {
-    border: 1px solid pink;
-    position: absolute;
-    top: 5vh;
-    left: 5vh;
-    width: 450px;
-    height: 60px;
-  } */
 
   .left-front-page {
     border: 1px solid blue;
