@@ -6,21 +6,21 @@ export default function Navbar() {
   return (
     <NavbarStyled>
       <ul>
-        <li>
+        <li className="button-icon">
           <NavLink to="/menuNav">
             <RxHamburgerMenu />
           </NavLink>
         </li>
-        <li>
+        <li className="qitchen-from-navbar">
           <NavLink to="/frontpage">QITCHEN</NavLink>
         </li>
-        <li>
+        <li className="button">
           <NavLink to="/menu">Menu</NavLink>
         </li>
-        <li>
+        <li className="button">
           <NavLink to="/about">About</NavLink>
         </li>
-        <li>
+        <li className="button book-a-table">
           <NavLink to="/reservation">Book a Table</NavLink>
         </li>
       </ul>
@@ -29,29 +29,56 @@ export default function Navbar() {
 }
 
 const NavbarStyled = styled.nav`
-  border: 1px solid pink;
+  background: black;
+  border-radius: 10px;
   position: absolute;
   top: 5vh;
   left: 5vh;
-  width: 450px;
+  width: 470px;
   height: 60px;
   z-index: 1;
 
   ul {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     list-style: none;
+    height: 100%;
+    width: 100%;
+
+    .button {
+      border: 1px solid transparent;
+      padding: 5px;
+      border-radius: 5px;
+
+      &:hover {
+        border: 1px solid white;
+        opacity: 1;
+        transition: 0.4s ease-in-out;
+      }
+    }
+
+    .book-a-table {
+      border: 1px solid white;
+    }
+
+    .button-icon {
+      padding: 7px 5px 0 5px;
+
+      border: 1px solid white;
+      border-radius: 4px;
+    }
 
     li {
       margin-right: 1rem;
+      width: fit-content;
 
       a {
         text-decoration: none;
         color: white;
-
-        &.active {
-          color: pink;
-        }
+        padding: 5px;
+        font-size: 15px;
+        line-height: 1.5;
       }
     }
   }
