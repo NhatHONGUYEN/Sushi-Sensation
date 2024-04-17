@@ -43,8 +43,9 @@ export default function FrontPage() {
 }
 
 const FrontPageStyled = styled.div`
+  background: black;
   border: 1px solid red;
-  height: 99vh;
+  height: 100vh;
   display: flex;
   position: relative;
 
