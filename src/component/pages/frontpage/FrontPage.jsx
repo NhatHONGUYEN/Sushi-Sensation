@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Navbar from "./navbar/Navbar";
+import { FiArrowRightCircle } from "react-icons/fi";
 
 export default function FrontPage() {
   return (
@@ -23,13 +24,19 @@ export default function FrontPage() {
         <Link to="/menu">
           <div className="image-container">
             <img src="../../../../serve_plate.jpg" alt="serve_plate" />
-            <button className="button_to">Menu</button>
+            <button className="button_to">
+              Menu <span className="spacer"></span>
+              <FiArrowRightCircle />
+            </button>
           </div>
         </Link>
         <Link to="/reservation">
           <div className="image-container">
             <img src="../../../../women_waiting.jpg" alt="women_waiting" />
-            <button className="button_to">Reservation</button>
+            <button className="button_to">
+              Reservation <span className="spacer"></span>
+              <FiArrowRightCircle />
+            </button>
           </div>
         </Link>
         <Link to="/about">
@@ -38,7 +45,10 @@ export default function FrontPage() {
               src="../../../../restaurant_place.jpg"
               alt="restaurant_place"
             />
-            <button className="button_to">Our Story</button>
+            <button className="button_to">
+              Our Story <span className="spacer"></span>
+              <FiArrowRightCircle />
+            </button>
           </div>
         </Link>
       </div>
@@ -97,9 +107,25 @@ const FrontPageStyled = styled.div`
       }
 
       .button_to {
+        border: none;
         position: absolute;
         right: 0;
         bottom: 0;
+        cursor: pointer;
+        background: black;
+        color: white;
+        width: 170px;
+        height: 30px;
+        border-top-left-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: forum sans-serif;
+        font-size: 20px;
+
+        .spacer {
+          margin-right: 10px;
+        }
       }
     }
   }
