@@ -55,12 +55,14 @@ const FrontPageStyled = styled.div`
   .left-front-page {
     width: 70%;
     margin: 5px;
+    padding: 5px;
 
     .video {
       width: 100%;
       height: 100%;
       object-fit: cover;
       position: relative;
+      border-radius: 20px;
     }
     .title {
       position: absolute;
@@ -83,13 +85,15 @@ const FrontPageStyled = styled.div`
 
     .image-container {
       position: relative;
-      height: 31vh;
+      height: 31.5vh;
+      margin-right: 5px;
       margin-top: 10px;
 
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 20px;
       }
 
       .button_to {
