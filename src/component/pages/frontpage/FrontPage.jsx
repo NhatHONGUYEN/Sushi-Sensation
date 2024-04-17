@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export default function FrontPage() {
@@ -14,18 +15,27 @@ export default function FrontPage() {
         ></video>
       </div>
       <div className="right-front-page">
-        <div className="image-container">
-          <img src="../../../../serve_plate.jpg" alt="serve_plate" />
-          <button className="button_to">Menu</button>
-        </div>
-        <div className="image-container">
-          <img src="../../../../women_waiting.jpg" alt="women_waiting" />
-          <button className="button_to">Reservation</button>
-        </div>
-        <div className="image-container">
-          <img src="../../../../restaurant_place.jpg" alt="restaurant_place" />
-          <button className="button_to">Our Story</button>
-        </div>
+        <Link to="/menu">
+          <div className="image-container">
+            <img src="../../../../serve_plate.jpg" alt="serve_plate" />
+            <button className="button_to">Menu</button>
+          </div>
+        </Link>
+        <Link to="/reservation">
+          <div className="image-container">
+            <img src="../../../../women_waiting.jpg" alt="women_waiting" />
+            <button className="button_to">Reservation</button>
+          </div>
+        </Link>
+        <Link to="/about">
+          <div className="image-container">
+            <img
+              src="../../../../restaurant_place.jpg"
+              alt="restaurant_place"
+            />
+            <button className="button_to">Our Story</button>
+          </div>
+        </Link>
       </div>
     </FrontPageStyled>
   );
@@ -61,14 +71,15 @@ const FrontPageStyled = styled.div`
     border: 1px solid green;
     flex: 1;
     display: flex;
-    height: 98vh;
+    height: 95vh;
     margin: 5px;
     flex-direction: column;
     justify-content: space-between;
 
     .image-container {
       position: relative;
-      height: 32%;
+      height: 31vh;
+      margin-top: 10px;
 
       img {
         width: 100%;
