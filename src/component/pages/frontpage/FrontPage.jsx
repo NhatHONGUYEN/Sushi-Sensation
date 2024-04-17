@@ -14,10 +14,17 @@ export default function FrontPage() {
         ></video>
       </div>
       <div className="right-front-page">
-        <div className="image">
+        <div className="image-container">
           <img src="../../../../serve_plate.jpg" alt="serve_plate" />
+          <button className="button_to">Menu</button>
+        </div>
+        <div className="image-container">
           <img src="../../../../women_waiting.jpg" alt="women_waiting" />
+          <button className="button_to">Reservation</button>
+        </div>
+        <div className="image-container">
           <img src="../../../../restaurant_place.jpg" alt="restaurant_place" />
+          <button className="button_to">Our Story</button>
         </div>
       </div>
     </FrontPageStyled>
@@ -26,10 +33,9 @@ export default function FrontPage() {
 
 const FrontPageStyled = styled.div`
   border: 1px solid red;
-  height: 100vh;
+  height: 99vh;
   display: flex;
   position: relative;
-  margin: 5px;
 
   /* .nav {
     border: 1px solid pink;
@@ -43,6 +49,7 @@ const FrontPageStyled = styled.div`
   .left-front-page {
     border: 1px solid blue;
     width: 70%;
+    margin: 5px;
 
     .video {
       width: 100%;
@@ -54,20 +61,26 @@ const FrontPageStyled = styled.div`
     border: 1px solid green;
     flex: 1;
     display: flex;
-    height: 100vh;
-    margin: 10px;
+    height: 98vh;
+    margin: 5px;
+    flex-direction: column;
+    justify-content: space-between;
 
-    .image {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
+    .image-container {
+      position: relative;
       height: 32%;
-      gap: 5px;
 
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+
+      .button_to {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        /* Add any other button styles here */
       }
     }
   }
