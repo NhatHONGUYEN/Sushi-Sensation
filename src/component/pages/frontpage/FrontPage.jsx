@@ -9,11 +9,15 @@ export default function FrontPage() {
       <div className="left-front-page">
         <video
           className="video"
-          src="../../../../public/set_up_the_bowl.mp4"
+          src="../../../../public/front-page-video.mp4"
           loop
           autoPlay
           muted
         ></video>
+
+        <h1 className="title">
+          SUSHI <br /> SENSATION
+        </h1>
       </div>
       <div className="right-front-page">
         <Link to="/menu">
@@ -44,13 +48,11 @@ export default function FrontPage() {
 
 const FrontPageStyled = styled.div`
   background: black;
-  border: 1px solid red;
   height: 100vh;
   display: flex;
   position: relative;
 
   .left-front-page {
-    border: 1px solid blue;
     width: 70%;
     margin: 5px;
 
@@ -58,10 +60,20 @@ const FrontPageStyled = styled.div`
       width: 100%;
       height: 100%;
       object-fit: cover;
+      position: relative;
+    }
+    .title {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      color: white;
+      font-size: 4rem;
+      z-index: 1;
+      font-family: forum;
+      letter-spacing: 5px;
     }
   }
   .right-front-page {
-    border: 1px solid green;
     flex: 1;
     display: flex;
     height: 95vh;
@@ -84,7 +96,6 @@ const FrontPageStyled = styled.div`
         position: absolute;
         right: 0;
         bottom: 0;
-        /* Add any other button styles here */
       }
     }
   }
