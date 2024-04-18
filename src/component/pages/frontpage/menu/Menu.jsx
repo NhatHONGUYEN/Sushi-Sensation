@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import { fakeMenu } from "../../../../fakedata/fakeMenu";
 import { MenuItem } from "./MenuItem";
+import Navbar from "../navbar/Navbar";
 
 export default function Menu() {
   const menuItems = fakeMenu.menuItems;
 
   return (
     <MenuStyled>
+      <Navbar />
       <div className="presentation_menu_image">
         <div className="menu_text">Menu</div>
         <img
