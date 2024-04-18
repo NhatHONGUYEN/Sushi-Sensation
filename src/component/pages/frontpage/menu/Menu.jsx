@@ -8,6 +8,7 @@ export default function Menu() {
   return (
     <MenuStyled>
       <div className="presentation_menu_image">
+        <div className="menu_text">Menu</div>
         <img
           src="/public/image_bowl_left_menu.jpg"
           alt="Image de présentation"
@@ -46,20 +47,34 @@ export default function Menu() {
 const MenuStyled = styled.div`
   display: flex;
   justify-content: space-around;
-  height: 100vh;
+  height: 97vh;
+  margin: 10px;
 
   .presentation_menu_image {
     background: red;
     flex: 1;
+    background-image: url("/public/image_bowl_left_menu.jpg");
+    background-position: center top 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
 
     img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
+      display: none;
+    }
+
+    .menu_text {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      font-size: 6rem;
+      color: white;
     }
   }
   .menu_items {
     border: 1px solid red;
+    border-radius: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -67,10 +82,16 @@ const MenuStyled = styled.div`
     font-size: 13px;
     overflow-y: auto;
     height: 100%;
+    margin: 0 10px;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .menu_title {
       text-align: center;
-      margin: 40px 0;
+      margin: 60px 0;
       font-size: 30px;
     }
 
@@ -78,11 +99,11 @@ const MenuStyled = styled.div`
       display: flex;
       align-items: center;
       margin-bottom: 1rem;
-      padding: 0 150px;
+      padding: 0 130px;
 
       img {
         height: 100px;
-        width: 100px;
+        width: 150px;
       }
 
       .item_info {
@@ -106,6 +127,7 @@ const MenuStyled = styled.div`
 
           .item_price {
             font-weight: bold;
+            margin-right: 50px;
           }
         }
 
