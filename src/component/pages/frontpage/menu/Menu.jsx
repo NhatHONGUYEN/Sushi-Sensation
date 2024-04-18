@@ -28,10 +28,7 @@ const MenuStyled = styled.div`
   height: 100vh;
 
   .presentation_menu_image {
-    background: red;
     flex: 1;
-    width: 50vh;
-
     img {
       height: 100%;
       width: 100%;
@@ -39,11 +36,12 @@ const MenuStyled = styled.div`
     }
   }
   .menu_items {
-    flex: 1;
-    width: 50vh;
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 150px;
+    width: 50%;
 
     .menu_item {
       display: flex;
