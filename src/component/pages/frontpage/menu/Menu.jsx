@@ -13,16 +13,28 @@ export default function Menu() {
           alt="Image de présentation"
         />
       </div>
+
       <div className="menu_items">
-        <h2 className="menu_title">Maki</h2>
+        <div className="navigation">
+          <a href="#maki">Maki</a>
+          <a href="#uramaki">Uramaki</a>
+          <a href="#special-rolls">Special Rolls</a>
+        </div>
+        <h2 id="maki" className="menu_title">
+          Maki
+        </h2>
         {menuItems.slice(0, 4).map((menuItem) => (
           <MenuItem key={menuItem.id} {...menuItem} />
         ))}
-        <h2 className="menu_title">Uramaki</h2>
+        <h2 id="uramaki" className="menu_title">
+          Uramaki
+        </h2>
         {menuItems.slice(4, 10).map((menuItem) => (
           <MenuItem key={menuItem.id} {...menuItem} />
         ))}
-        <h2 className="menu_title">Special Rolls</h2>
+        <h2 id="special-rolls" className="menu_title">
+          Special Rolls
+        </h2>
         {menuItems.slice(10).map((menuItem) => (
           <MenuItem key={menuItem.id} {...menuItem} />
         ))}
@@ -53,11 +65,18 @@ const MenuStyled = styled.div`
     flex-direction: column;
     width: 100%;
     font-size: 13px;
+    overflow-y: auto;
+    height: 100%;
+
+    .menu_title {
+      text-align: center;
+      margin: 40px 0;
+      font-size: 30px;
+    }
 
     .menu_item {
       display: flex;
       align-items: center;
-
       margin-bottom: 1rem;
       padding: 0 150px;
 
@@ -75,10 +94,14 @@ const MenuStyled = styled.div`
           display: flex;
           justify-content: space-between;
 
+          span {
+            white-space: nowrap;
+          }
+
           .dots {
             flex-grow: 1;
-            margin: 3px 10px;
             border-bottom: 1px dotted #ccc;
+            margin: 3px 10px;
           }
 
           .item_price {
@@ -94,9 +117,19 @@ const MenuStyled = styled.div`
     }
   }
 
-  .menu_items h2.menu_title {
-    text-align: center;
-    margin: 50px 0;
-    font-size: 30px;
+  .navigation {
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin-top: 40px;
+      margin-right: 5px;
+      padding: 5px 10px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+    }
   }
 `;
