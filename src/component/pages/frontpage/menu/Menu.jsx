@@ -51,7 +51,6 @@ const MenuStyled = styled.div`
   margin: 10px;
 
   .presentation_menu_image {
-    background: red;
     flex: 1;
     background-image: url("/public/image_bowl_left_menu.jpg");
     background-position: center top 20%;
@@ -69,11 +68,11 @@ const MenuStyled = styled.div`
       bottom: 40px;
       left: 40px;
       font-size: 6rem;
-      color: white;
+      color: #efe7d2;
     }
   }
   .menu_items {
-    border: 1px solid red;
+    border: 1px solid #efe7d2;
     border-radius: 20px;
     flex: 1;
     display: flex;
@@ -93,6 +92,7 @@ const MenuStyled = styled.div`
       text-align: center;
       margin: 60px 0;
       font-size: 30px;
+      color: #efe7d2;
     }
 
     .menu_item {
@@ -114,6 +114,7 @@ const MenuStyled = styled.div`
           font-size: 17px;
           display: flex;
           justify-content: space-between;
+          color: #efe7d2;
 
           span {
             white-space: nowrap;
@@ -121,19 +122,22 @@ const MenuStyled = styled.div`
 
           .dots {
             flex-grow: 1;
-            border-bottom: 1px dotted #ccc;
+            border-bottom: 1px dotted #efe7d2;
             margin: 3px 10px;
           }
 
           .item_price {
             font-weight: bold;
             margin-right: 50px;
+            color: #efe7d2;
           }
         }
 
         .item_description {
           max-width: 400px;
           font-size: 14px;
+          color: #efe7d2;
+          margin-top: 5px;
         }
       }
     }
@@ -147,8 +151,8 @@ const MenuStyled = styled.div`
       margin-top: 40px;
       margin-right: 5px;
       padding: 5px 10px;
-      background-color: #333;
-      color: #fff;
+      border: 1px solid white;
+      color: #efe7d2;
       border-radius: 5px;
       text-decoration: none;
       font-size: 14px;

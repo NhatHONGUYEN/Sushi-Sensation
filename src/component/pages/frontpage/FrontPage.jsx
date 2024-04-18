@@ -57,7 +57,6 @@ export default function FrontPage() {
 }
 
 const FrontPageStyled = styled.div`
-  background: black;
   height: 100vh;
   display: flex;
   position: relative;
@@ -78,7 +77,7 @@ const FrontPageStyled = styled.div`
       position: absolute;
       bottom: 40px;
       left: 40px;
-      color: #d7c8a1;
+      color: #efe7d2;
       font-size: 4rem;
       z-index: 1;
       font-family: forum;
@@ -113,7 +112,7 @@ const FrontPageStyled = styled.div`
         bottom: 0;
         cursor: pointer;
         background: black;
-        color: #d7c8a1;
+        color: #efe7d2;
         width: 170px;
         height: 30px;
         border-top-left-radius: 20px;

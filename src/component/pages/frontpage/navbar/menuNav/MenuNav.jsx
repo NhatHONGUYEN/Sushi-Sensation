@@ -33,7 +33,6 @@ const MenuNavStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: black;
 
   ul {
     display: flex;
@@ -50,7 +49,7 @@ const MenuNavStyled = styled.div`
 
       a {
         text-decoration: none;
-        color: #d7c8a1;
+        color: #efe7d2;
         font-size: 50px;
         transition: color 0.5s ease-in-out;
 
@@ -60,7 +59,7 @@ const MenuNavStyled = styled.div`
       }
     }
     .top-border {
-      border-top: 2px solid #d7c8a1;
+      border-top: 2px solid #efe7d2;
       width: 20%;
       padding-top: 20px;
       justify-content: center;
@@ -68,7 +67,7 @@ const MenuNavStyled = styled.div`
     }
 
     .bottom-border {
-      border-bottom: 2px solid #d7c8a1;
+      border-bottom: 2px solid #efe7d2;
       width: 20%;
       padding-bottom: 20px;
       justify-content: center;
