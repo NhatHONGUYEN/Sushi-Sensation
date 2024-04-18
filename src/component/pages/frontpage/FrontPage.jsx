@@ -122,6 +122,12 @@ const FrontPageStyled = styled.div`
         justify-content: center;
         font-family: forum sans-serif;
         font-size: 20px;
+        transform: scale(1);
+        transition: transform 0.5s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
 
         .spacer {
           margin-right: 10px;
