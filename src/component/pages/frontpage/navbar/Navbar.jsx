@@ -49,20 +49,20 @@ const NavbarStyled = styled.nav`
     height: 100%;
     width: 100%;
 
-    .toggle_navbar_button {
-      &:hover {
-      }
-    }
-
     .button {
       border: 1px solid transparent;
       padding: 5px;
       border-radius: 5px;
+      transform: scale(
+        1
+      ); // Ajoute la propriété transform avec une valeur initiale
+      transition: transform 0.2s ease-in-out, border 0.4s ease-in-out; // Ajoute la pro
 
       &:hover {
         border: 1px solid white;
         opacity: 1;
         transition: 0.4s ease-in-out;
+        transform: scale(1.1);
       }
     }
 
