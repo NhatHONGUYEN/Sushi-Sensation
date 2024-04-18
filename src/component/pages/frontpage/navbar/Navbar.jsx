@@ -59,7 +59,7 @@ const NavbarStyled = styled.nav`
       transition: transform 0.2s ease-in-out, border 0.4s ease-in-out; // Ajoute la pro
 
       &:hover {
-        border: 1px solid white;
+        border: 1px solid #d7c8a1;
         opacity: 1;
         transition: 0.4s ease-in-out;
         transform: scale(1.1);
@@ -67,13 +67,13 @@ const NavbarStyled = styled.nav`
     }
 
     .book-a-table {
-      border: 1px solid white;
+      border: 1px solid #d7c8a1;
     }
 
     .button-icon {
       padding: 7px 5px 0 5px;
 
-      border: 1px solid white;
+      border: 1px solid #d7c8a1;
       border-radius: 4px;
     }
 
@@ -83,7 +83,7 @@ const NavbarStyled = styled.nav`
 
       a {
         text-decoration: none;
-        color: white;
+        color: #d7c8a1;
         padding: 5px;
         font-size: 15px;
         line-height: 1.5;

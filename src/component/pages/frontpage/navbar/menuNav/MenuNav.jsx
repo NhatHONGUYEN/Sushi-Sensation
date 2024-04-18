@@ -50,12 +50,17 @@ const MenuNavStyled = styled.div`
 
       a {
         text-decoration: none;
-        color: white;
+        color: #d7c8a1;
         font-size: 50px;
+        transition: color 0.5s ease-in-out;
+
+        &:hover {
+          color: #f5c78f;
+        }
       }
     }
     .top-border {
-      border-top: 2px solid white;
+      border-top: 2px solid #d7c8a1;
       width: 20%;
       padding-top: 20px;
       justify-content: center;
@@ -63,7 +68,7 @@ const MenuNavStyled = styled.div`
     }
 
     .bottom-border {
-      border-bottom: 2px solid white;
+      border-bottom: 2px solid #d7c8a1;
       width: 20%;
       padding-bottom: 20px;
       justify-content: center;
