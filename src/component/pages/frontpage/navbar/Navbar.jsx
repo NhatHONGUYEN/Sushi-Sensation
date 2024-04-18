@@ -1,14 +1,17 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { RxHamburgerMenu } from "react-icons/rx";
+import Hamburger from "hamburger-react";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <NavbarStyled>
       <ul>
-        <li className="button-icon">
+        <li className="toggle_navbar_button">
           <NavLink to="/menuNav">
-            <RxHamburgerMenu />
+            <Hamburger toggled={isOpen} toggle={setOpen} />
           </NavLink>
         </li>
         <li className="qitchen-from-navbar">
@@ -45,6 +48,11 @@ const NavbarStyled = styled.nav`
     list-style: none;
     height: 100%;
     width: 100%;
+
+    .toggle_navbar_button {
+      &:hover {
+      }
+    }
 
     .button {
       border: 1px solid transparent;
