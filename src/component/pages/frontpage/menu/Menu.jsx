@@ -97,8 +97,7 @@ const MenuStyled = styled.div`
       display: flex;
       align-items: center;
       margin-bottom: 1rem;
-      padding: 0 130px;
-
+      justify-content: center;
       img {
         height: 100px;
         width: 150px;
