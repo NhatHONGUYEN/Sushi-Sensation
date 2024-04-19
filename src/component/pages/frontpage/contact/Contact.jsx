@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import OpeningHours from "./OpeningHours";
+import Galerie from "./Galerie";
 
 export default function Contact() {
   return (
@@ -7,7 +8,7 @@ export default function Contact() {
       <div className="Contact"></div>
       <div className="info-for-contact">
         <OpeningHours />
-        <div>Élément 2</div>
+        <Galerie />
         <div>Élément 3</div>
         <div>Élément 4</div>
       </div>
