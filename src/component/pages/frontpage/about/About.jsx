@@ -85,6 +85,8 @@ const AboutStyled = styled.div`
     left: 3%;
     font-size: 6rem;
     color: #efe7d2;
+    font-family: forum;
+    letter-spacing: 5px;
   }
 
   .our-story-description {

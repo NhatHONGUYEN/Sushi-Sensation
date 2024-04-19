@@ -10,7 +10,7 @@ export default function Menu() {
     <MenuStyled>
       <Navbar />
       <div className="presentation_menu_image">
-        <div className="menu_text">Menu</div>
+        <div className="menu_text">MENU</div>
       </div>
 
       <div className="menu_items">
@@ -67,6 +67,8 @@ const MenuStyled = styled.div`
       left: 3%;
       font-size: 6rem;
       color: #efe7d2;
+      font-family: forum;
+      letter-spacing: 5px;
     }
   }
   .menu_items {

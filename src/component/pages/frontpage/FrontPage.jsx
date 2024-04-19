@@ -77,9 +77,8 @@ const FrontPageStyled = styled.div`
       position: absolute;
       bottom: 5%;
       left: 3%;
+      font-size: 6rem;
       color: #efe7d2;
-      font-size: 4rem;
-      z-index: 1;
       font-family: forum;
       letter-spacing: 5px;
     }
