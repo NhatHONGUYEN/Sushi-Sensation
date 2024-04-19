@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import OpeningHours from "./OpeningHours";
 import Galerie from "./Galerie";
+import ContactInfo from "./ContactInfo";
 
 export default function Contact() {
   return (
@@ -10,7 +11,7 @@ export default function Contact() {
         <OpeningHours />
         <Galerie />
         <div>Élément 3</div>
-        <div>Élément 4</div>
+        <ContactInfo />
       </div>
     </ContactStyled>
   );
@@ -43,6 +44,5 @@ const ContactStyled = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
   }
 `;
