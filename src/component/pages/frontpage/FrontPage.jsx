@@ -75,8 +75,8 @@ const FrontPageStyled = styled.div`
     }
     .title {
       position: absolute;
-      bottom: 40px;
-      left: 40px;
+      bottom: 5%;
+      left: 3%;
       color: #efe7d2;
       font-size: 4rem;
       z-index: 1;

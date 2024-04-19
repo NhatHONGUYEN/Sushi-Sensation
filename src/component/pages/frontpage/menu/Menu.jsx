@@ -63,8 +63,8 @@ const MenuStyled = styled.div`
 
     .menu_text {
       position: absolute;
-      bottom: 40px;
-      left: 40px;
+      bottom: 5%;
+      left: 3%;
       font-size: 6rem;
       color: #efe7d2;
     }

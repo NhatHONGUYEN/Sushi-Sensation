@@ -9,6 +9,7 @@ export default function About() {
     <AboutStyled>
       <Navbar />
       <div className="image-for-about"></div>
+      <div className="about-text">ABOUT</div>
       <div className="our-story-description">
         <div className="sushi-women-container">
           <div className="sushi-artistry">
@@ -77,6 +78,15 @@ const AboutStyled = styled.div`
       display: none;
     }
   }
+
+  .about-text {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 6rem;
+    color: #efe7d2;
+  }
+
   .our-story-description {
     display: flex;
     flex-direction: column;
