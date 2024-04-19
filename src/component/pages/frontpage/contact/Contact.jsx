@@ -1,10 +1,16 @@
 import styled from "styled-components";
+import OpeningHours from "./OpeningHours";
 
 export default function Contact() {
   return (
     <ContactStyled>
-      <div className="Contact">Contact</div>
-      <div className="info-for-contact">info-for-contact</div>
+      <div className="Contact"></div>
+      <div className="info-for-contact">
+        <OpeningHours />
+        <div>Élément 2</div>
+        <div>Élément 3</div>
+        <div>Élément 4</div>
+      </div>
     </ContactStyled>
   );
 }
@@ -18,11 +24,24 @@ const ContactStyled = styled.div`
   gap: 10px;
 
   .Contact {
-    background: green;
-    width: 50%;
+    flex: 1;
+    background-image: url("../../../../../public/image-for-contact.jpg");
+    background-position: center bottom 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+
+    img {
+      display: none;
+    }
   }
   .info-for-contact {
     background: blue;
     width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
   }
 `;
