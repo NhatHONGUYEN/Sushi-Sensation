@@ -2,10 +2,12 @@ import styled from "styled-components";
 import imageForAbout from "../../../../../public/image_for_about.jpg";
 import womenWaiting from "../../../../../public/women_waiting.jpg";
 import cookingForAbout from "../../../../../public/cooking-for-about.jpg";
+import Navbar from "../navbar/Navbar";
 
 export default function About() {
   return (
     <AboutStyled>
+      <Navbar />
       <div className="image-for-about"></div>
       <div className="our-story-description">
         <div className="sushi-women-container">
@@ -25,20 +27,23 @@ export default function About() {
         </div>
         <div className="trip-michelin-start-container">
           <div className="trip-satisfaction">
-            TRIP ADVISOR <p>BEST SUSHI</p>
+            <img src="../../../../../public/stars.png" alt="stars" />
+            <h2>TRIP ADVISOR</h2> <p>BEST SUSHI</p>
           </div>
           <div className="trip-satisfaction">
-            MiCHELIN GUIDE <p>QUALITY FOOD</p>
+            <img src="../../../../../public/stars.png" alt="stars" />
+            <h2>MICHELIN GUIDE</h2> <p>QUALITY FOOD</p>
           </div>
           <div className="trip-satisfaction">
-            START DINING <p>COOL VIBE</p>
+            <img src="../../../../../public/stars.png" alt="stars" />
+            <h2>START DINING</h2> <p>COOL VIBE</p>
           </div>
         </div>
         <div className="cooking-our-container">
           <div>
             <img src={cookingForAbout} alt="cooking-for-about" />
           </div>
-          <div>
+          <div className="cooking-our-story">
             <h1>OUR STORY</h1>{" "}
             <p>
               Founded with a passion for culinary excellence, Qitchen's journey
@@ -76,40 +81,46 @@ const AboutStyled = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: green;
     width: 50%;
     padding: 20px;
+    gap: 20px;
 
-    .sushi-artistry {
-      border: 1px solid red;
-      height: 30vh;
-      width: 60%;
+    .sushi-women-container {
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
-      padding: 50px 30px;
-      border-radius: 20px;
+      align-items: center;
+      border-radius: 15px;
+      height: 45%;
+      gap: 15px;
 
-      h1 {
-        font-size: 25px;
+      .sushi-artistry {
+        border-radius: 15px;
+        border: 1px solid #efe7d2;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 60px 50px;
+        border-radius: 15px;
+
+        h1 {
+          font-size: 25px;
+          color: #efe7d2;
+        }
+
+        p {
+          font-size: 16px;
+
+          color: #efe7d2;
+        }
       }
 
-      p {
-        font-size: 16px;
-
-        color: #333;
+      img {
+        height: 40vh;
+        width: 40vh;
+        object-fit: cover;
+        border-radius: 15px;
       }
-    }
-  }
-
-  .sushi-women-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    img {
-      height: 30vh;
-      border-radius: 20px;
     }
   }
 
@@ -117,12 +128,35 @@ const AboutStyled = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid blue;
-    height: 120px;
-    padding: 0 50px;
+    height: 10%;
+    gap: 10px;
+    img {
+      height: 40px;
+      width: 60px;
+    }
 
     .trip-satisfaction {
-      border: 1px solid red;
+      border-radius: 15px;
+      border: 1px solid #efe7d2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      border-radius: 15px;
+      padding-bottom: 10px;
+
+      h2 {
+        font-size: 20px;
+        color: #efe7d2;
+      }
+
+      p {
+        font-size: 10px;
+        color: #efe7d2;
+      }
     }
   }
 
@@ -130,10 +164,37 @@ const AboutStyled = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
+    height: 45%;
+
+    .cooking-our-story {
+      height: 100%;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 50px 80px;
+      align-items: center;
+      border-radius: 15px;
+      border: 1px solid;
+
+      color: #efe7d2;
+
+      h1 {
+        font-size: 25px;
+        color: #efe7d2;
+      }
+      p {
+        font-size: 16px;
+        color: #efe7d2;
+      }
+    }
   }
 
   img {
-    height: 300px;
-    width: 300px;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 15px;
+    width: 40vh;
   }
 `;
