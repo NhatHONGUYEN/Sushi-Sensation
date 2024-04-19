@@ -7,8 +7,6 @@ import Reservation from "./component/pages/frontpage/reservation/Reservation.jsx
 import About from "./component/pages/frontpage/about/About.jsx";
 import MenuNav from "./component/pages/frontpage/navbar/menuNav/MenuNav.jsx";
 import Contact from "./component/pages/frontpage/contact/Contact.jsx";
-import Blog from "./component/pages/frontpage/blog/Blog.jsx";
-import StyleGuide from "./component/pages/frontpage/styleGuide/StyleGuide.jsx";
 
 function App() {
   return (
@@ -21,8 +19,6 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/menuNav" element={<MenuNav />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/styleguide" element={<StyleGuide />} />
     </Routes>
   );
 }

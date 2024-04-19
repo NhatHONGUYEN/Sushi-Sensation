@@ -6,22 +6,16 @@ export default function MenuNav() {
     <MenuNavStyled>
       <ul>
         <li className="top-border">
-          <NavLink to="/menu">Menu</NavLink>
+          <NavLink to="/menu">MENU</NavLink>
         </li>
         <li>
-          <NavLink to="/reservation">Book a Table</NavLink>
+          <NavLink to="/reservation">BOOK A TABLE</NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact">Contact</NavLink>
-        </li>
-        <li>
-          <NavLink to="/blog">Blog</NavLink>
+          <NavLink to="/about">ABOUT</NavLink>
         </li>
         <li className="bottom-border">
-          <NavLink to="/styleguide">StyleGuide</NavLink>
+          <NavLink to="/contact">CONTACT</NavLink>
         </li>
       </ul>
     </MenuNavStyled>
