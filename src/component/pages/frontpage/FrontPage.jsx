@@ -23,7 +23,7 @@ export default function FrontPage() {
       <div className="right-front-page">
         <Link to="/menu">
           <div className="image-container">
-            <img src="../../../../serve_plate.jpg" alt="serve_plate" />
+            <img src="/serve_plate.jpg" alt="serve_plate" />
             <button className="button_to">
               Menu <span className="spacer"></span>
               <FiArrowRightCircle />
@@ -32,7 +32,7 @@ export default function FrontPage() {
         </Link>
         <Link to="/reservation">
           <div className="image-container">
-            <img src="../../../../women_waiting.jpg" alt="women_waiting" />
+            <img src="/women_waiting.jpg" alt="women_waiting" />
             <button className="button_to">
               Reservation <span className="spacer"></span>
               <FiArrowRightCircle />
@@ -41,10 +41,7 @@ export default function FrontPage() {
         </Link>
         <Link to="/about">
           <div className="image-container">
-            <img
-              src="../../../../restaurant_place.jpg"
-              alt="restaurant_place"
-            />
+            <img src="/restaurant_place.jpg" alt="restaurant_place" />
             <button className="button_to">
               Our Story <span className="spacer"></span>
               <FiArrowRightCircle />

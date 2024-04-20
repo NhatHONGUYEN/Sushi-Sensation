@@ -2,9 +2,18 @@ import styled from "styled-components";
 import { fakeMenu } from "../../../../fakedata/fakeMenu";
 import { MenuItem } from "./MenuItem";
 import Navbar from "../navbar/Navbar";
+import { useRef } from "react";
 
 export default function Menu() {
   const menuItems = fakeMenu.menuItems;
+
+  const makiRef = useRef(null);
+  const uramakiRef = useRef(null);
+  const specialRollsRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <MenuStyled>
@@ -15,23 +24,48 @@ export default function Menu() {
 
       <div className="menu_items">
         <div className="navigation">
-          <a href="#maki">Maki</a>
-          <a href="#uramaki">Uramaki</a>
-          <a href="#special-rolls">Special Rolls</a>
+          <a
+            href="#maki"
+            onClick={(event) => {
+              event.preventDefault();
+              scrollToSection(makiRef);
+            }}
+          >
+            Maki
+          </a>
+          <a
+            href="#uramaki"
+            onClick={(event) => {
+              event.preventDefault();
+              scrollToSection(uramakiRef);
+            }}
+          >
+            Uramaki
+          </a>
+          <a
+            href="#special-rolls"
+            onClick={(event) => {
+              event.preventDefault();
+              scrollToSection(specialRollsRef);
+            }}
+          >
+            Special Rolls
+          </a>
         </div>
-        <h2 id="maki" className="menu_title">
+
+        <h2 ref={makiRef} className="menu_title">
           Maki
         </h2>
         {menuItems.slice(0, 4).map((menuItem) => (
           <MenuItem key={menuItem.id} {...menuItem} />
         ))}
-        <h2 id="uramaki" className="menu_title">
+        <h2 ref={uramakiRef} className="menu_title">
           Uramaki
         </h2>
         {menuItems.slice(4, 10).map((menuItem) => (
           <MenuItem key={menuItem.id} {...menuItem} />
         ))}
-        <h2 id="special-rolls" className="menu_title">
+        <h2 ref={specialRollsRef} className="menu_title">
           Special Rolls
         </h2>
         {menuItems.slice(10).map((menuItem) => (
@@ -51,7 +85,7 @@ const MenuStyled = styled.div`
 
   .presentation_menu_image {
     flex: 1;
-    background-image: url("/public/image_bowl_left_menu.jpg");
+    background-image: url("/image_bowl_left_menu.jpg");
     background-position: center top 20%;
     background-size: cover;
     background-repeat: no-repeat;

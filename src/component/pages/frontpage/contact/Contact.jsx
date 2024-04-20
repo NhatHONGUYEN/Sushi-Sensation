@@ -29,14 +29,15 @@ const ContactStyled = styled.div`
   height: 97vh;
   margin: 10px;
   gap: 10px;
+  position: relative;
 
   .contact {
     flex: 1;
-    background-image: url("../../../../../public/image-for-contact.jpg");
+    background-image: url("/image-for-contact.jpg");
     background-position: center bottom 20%;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+
     border-radius: 20px;
 
     img {
