@@ -8,7 +8,10 @@ import Navbar from "../navbar/Navbar";
 export default function Contact() {
   return (
     <ContactStyled>
-      <div className="Contact"></div>
+      <div className="contact">
+        <div className="contact-text">CONTACT</div>
+      </div>
+
       <div className="info-for-contact">
         <Navbar />
         <OpeningHours />
@@ -27,7 +30,7 @@ const ContactStyled = styled.div`
   margin: 10px;
   gap: 10px;
 
-  .Contact {
+  .contact {
     flex: 1;
     background-image: url("../../../../../public/image-for-contact.jpg");
     background-position: center bottom 20%;
@@ -38,6 +41,16 @@ const ContactStyled = styled.div`
 
     img {
       display: none;
+    }
+
+    .contact-text {
+      position: absolute;
+      bottom: 5%;
+      left: 3%;
+      font-size: 6rem;
+      color: #efe7d2;
+      font-family: forum;
+      letter-spacing: 5px;
     }
   }
   .info-for-contact {
