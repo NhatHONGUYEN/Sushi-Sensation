@@ -5,25 +5,25 @@ const ContactInfo = () => {
   return (
     <ContactStyled>
       <h1>GET IN TOUCH</h1>
-      <div className="hours">
+      <div className="contact-info">
         <p>
           <span>ADDRESS</span>
-          <span className="time">
-            23 Greenfield Avenue,
-            <br />
-            Prague 120 00
+          <span className="contact-list">
+            23 Greenfield Avenue, Prague 120 00
           </span>
         </p>
         <p>
-          <span>PHONE</span> <span className="time">+42 1234 567890</span>
+          <span>PHONE</span>
+          <span className="contact-list">+42 1234 567890</span>
         </p>
         <p>
-          <span>EMAIL</span> <span className="time">hello@example.com</span>
+          <span>EMAIL</span>
+          <span className="contact-list">hello@example.com</span>
         </p>
         <p>
-          <span>FOLLOW</span>{" "}
-          <span className="time">
-            <CiFacebook /> <CiInstagram /> <CiTwitter />{" "}
+          <span>FOLLOW</span>
+          <span className="contact-list">
+            <CiFacebook /> <CiInstagram /> <CiTwitter />
           </span>
         </p>
       </div>
@@ -34,13 +34,31 @@ const ContactInfo = () => {
 export default ContactInfo;
 
 const ContactStyled = styled.div`
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  width: 50vh;
-  height: 50vh;
+  padding: 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  border-radius: 15px;
+  border: 1px solid #efe7d2;
+
+  h1 {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    color: #efe7d2;
+  }
+
+  p {
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #efe7d2;
+  }
+
+  .contact-list {
+    display: flex;
+
+    align-items: center;
+  }
 `;

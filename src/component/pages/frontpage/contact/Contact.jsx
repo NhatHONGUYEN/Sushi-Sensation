@@ -1,7 +1,8 @@
-import styled from "styled-components";
 import OpeningHours from "./OpeningHours";
 import Galerie from "./Galerie";
 import ContactInfo from "./ContactInfo";
+import styled from "styled-components";
+import MapContainerComponent from "./MapContainerComponent";
 
 export default function Contact() {
   return (
@@ -10,7 +11,7 @@ export default function Contact() {
       <div className="info-for-contact">
         <OpeningHours />
         <Galerie />
-        <div>Élément 3</div>
+        <MapContainerComponent />
         <ContactInfo />
       </div>
     </ContactStyled>
@@ -18,7 +19,6 @@ export default function Contact() {
 }
 
 const ContactStyled = styled.div`
-  background: red;
   display: flex;
   justify-content: space-around;
   height: 97vh;
@@ -39,10 +39,10 @@ const ContactStyled = styled.div`
     }
   }
   .info-for-contact {
-    background: blue;
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 10px;
   }
 `;

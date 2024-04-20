@@ -16,10 +16,8 @@ const Galerie = () => {
 };
 
 const GalerieStyled = styled.div`
-  background: #f9f9f9;
-  border-radius: 10px;
+  border-radius: 15px;
   width: 50vh;
-  height: 97%;
 
   .grid {
     display: grid;
@@ -28,15 +26,12 @@ const GalerieStyled = styled.div`
     gap: 10px;
   }
 
-  .item {
-    height: calc(50vh / 2);
-  }
-
   img {
-    border-radius: 10px;
-    width: 100%;
-    height: 97%;
+    height: 23vh;
     object-fit: cover;
+    width: 25vh;
+
+    border-radius: 15px;
   }
 `;
 export default Galerie;

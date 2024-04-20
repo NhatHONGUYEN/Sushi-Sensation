@@ -29,29 +29,30 @@ const OpeningHours = () => {
 };
 
 const OpeningHoursStyled = styled.div`
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  width: 50vh;
-  height: 50vh;
+  padding: 10% 5%;
+  border-radius: 15px;
+  width: 52vh;
+  margin-bottom: 7px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid #efe7d2;
 
   h1 {
-    font-size: 20px;
+    font-size: 35px;
+    color: #efe7d2;
   }
   p {
     line-height: 1.5;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    color: #efe7d2;
   }
 
   .hours {
-    width: 90%;
-    border: 1px solid red;
+    width: 80%;
   }
 
   .time {
