@@ -12,12 +12,13 @@ import "./component/pages/animation/fadeInFromRight.css";
 
 function App() {
   const location = useLocation();
+
   return (
     <TransitionGroup>
       <CSSTransition
         key={location.key}
         classNames="fadeInFromRight"
-        timeout={500}
+        timeout={1500}
       >
         <Routes location={location}>
           <Route path="/" element={<FrontPage />} />

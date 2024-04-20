@@ -8,10 +8,7 @@
     
 }
 body {
-    background-image: url('../public/background_website.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: multiply;
+    background-image: url('/background_website.jpg');
+   
+   
   }

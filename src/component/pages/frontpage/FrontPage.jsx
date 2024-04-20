@@ -10,7 +10,7 @@ export default function FrontPage() {
       <div className="left-front-page">
         <video
           className="video"
-          src="../../../../public/front-page-video.mp4"
+          src="/front-page-video.mp4"
           loop
           autoPlay
           muted

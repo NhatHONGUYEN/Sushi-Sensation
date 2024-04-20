@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import imageForAbout from "../../../../../public/image_for_about.jpg";
-import womenWaiting from "../../../../../public/women_waiting.jpg";
-import cookingForAbout from "../../../../../public/cooking-for-about.jpg";
+import imageForAbout from "/image_for_about.jpg";
+import womenWaiting from "/women_waiting.jpg";
+import cookingForAbout from "/cooking-for-about.jpg";
 import Navbar from "../navbar/Navbar";
 
 export default function About() {
@@ -28,15 +28,15 @@ export default function About() {
         </div>
         <div className="trip-michelin-start-container">
           <div className="trip-satisfaction">
-            <img src="../../../../../public/stars.png" alt="stars" />
+            <img src="/stars.png" alt="stars" />
             <h2>TRIP ADVISOR</h2> <p>BEST SUSHI</p>
           </div>
           <div className="trip-satisfaction">
-            <img src="../../../../../public/stars.png" alt="stars" />
+            <img src="/stars.png" alt="stars" />
             <h2>MICHELIN GUIDE</h2> <p>QUALITY FOOD</p>
           </div>
           <div className="trip-satisfaction">
-            <img src="../../../../../public/stars.png" alt="stars" />
+            <img src="/stars.png" alt="stars" />
             <h2>START DINING</h2> <p>COOL VIBE</p>
           </div>
         </div>
