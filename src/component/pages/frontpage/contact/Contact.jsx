@@ -3,12 +3,14 @@ import Galerie from "./Galerie";
 import ContactInfo from "./ContactInfo";
 import styled from "styled-components";
 import MapContainerComponent from "./MapContainerComponent";
+import Navbar from "../navbar/Navbar";
 
 export default function Contact() {
   return (
     <ContactStyled>
       <div className="Contact"></div>
       <div className="info-for-contact">
+        <Navbar />
         <OpeningHours />
         <Galerie />
         <MapContainerComponent />
