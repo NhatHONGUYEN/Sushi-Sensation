@@ -45,6 +45,7 @@ const ReservationStyled = styled.div`
   display: flex;
   height: 97vh;
   margin: 10px;
+  position: relative;
 
   .image-presentation {
     flex: 1;
@@ -52,7 +53,7 @@ const ReservationStyled = styled.div`
     background-position: center top 15%;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+
     border-radius: 20px;
 
     img {

@@ -64,6 +64,7 @@ const AboutStyled = styled.div`
   margin: 10px;
   display: flex;
   justify-content: space-around;
+  position: relative;
 
   .image-for-about {
     width: 50%;
@@ -71,7 +72,7 @@ const AboutStyled = styled.div`
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+
     border-radius: 20px;
 
     img {

@@ -47,6 +47,7 @@ const MenuStyled = styled.div`
   justify-content: space-around;
   height: 97vh;
   margin: 10px;
+  position: relative;
 
   .presentation_menu_image {
     flex: 1;
@@ -54,7 +55,7 @@ const MenuStyled = styled.div`
     background-position: center top 20%;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+
     border-radius: 20px;
 
     img {
