@@ -1,7 +1,7 @@
 const menuItems = [
   {
     id: "1",
-    imageSource: "../../public/spicy_tuna_maki.jpg",
+    imageSource: "/spicy_tuna_maki.jpg",
     title: "SPICY TUNA MAKI",
     description:
       "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
@@ -9,7 +9,7 @@ const menuItems = [
   },
   {
     id: "2",
-    imageSource: "../../public/mango_maki.jpg",
+    imageSource: "/mango_maki.jpg",
     title: "MANGO MAKI",
     description:
       "Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures.",
@@ -17,7 +17,7 @@ const menuItems = [
   },
   {
     id: "3",
-    imageSource: "../../public/salmon_maki.jpg",
+    imageSource: "/salmon_maki.jpg",
     title: "SALMON MAKI",
     description:
       "Shiitake mushrooms, avocado, and pickled daikon radish nestle within a roll of seasoned rice, coated with nutty sesame seeds.",
@@ -25,7 +25,7 @@ const menuItems = [
   },
   {
     id: "4",
-    imageSource: "../../public/tuna_maki.jpg",
+    imageSource: "/tuna_maki.jpg",
     title: "TUNA MAKI",
     description:
       "A vibrant assortment of julienned carrots, bell peppers, and cucumber, tightly encased in a nori-wrapped rice roll.",
@@ -33,7 +33,7 @@ const menuItems = [
   },
   {
     id: "5",
-    imageSource: "../../public/voclano_delight.jpg",
+    imageSource: "/voclano_delight.jpg",
     title: "VOLCANO DELIGHT",
     description:
       "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce.",
@@ -41,7 +41,7 @@ const menuItems = [
   },
   {
     id: "6",
-    imageSource: "../../public/rainbow_fusion.jpg",
+    imageSource: "/rainbow_fusion.jpg",
     title: "RAINBOW FUSION",
     description:
       "A colorful blend of fresh tuna, salmon, yellowtail, and avocado, enveloping a core of cucumber and crab stick.",
@@ -49,7 +49,7 @@ const menuItems = [
   },
   {
     id: "7",
-    imageSource: "../../public/dragon_elegance.jpg",
+    imageSource: "/dragon_elegance.jpg",
     title: "DRAGON ELEGANCE",
     description:
       "Grilled eel and avocado nestled within the roll, draped with slices of ripe avocado resembling dragon scales.",
@@ -57,7 +57,7 @@ const menuItems = [
   },
   {
     id: "8",
-    imageSource: "../../public/sunset_serenity.jpg",
+    imageSource: "/sunset_serenity.jpg",
     title: "SUNSET SERENITY",
     description:
       "Tempura shrimp, cucumber, and spicy mayo embraced by a roll of soy paper, crowned with slices of creamy mango.",
@@ -65,7 +65,7 @@ const menuItems = [
   },
   {
     id: "9",
-    imageSource: "../../public/mystic_garden.jpg",
+    imageSource: "/mystic_garden.jpg",
     title: "MYSTIC GARDEN",
     description:
       "Shiitake mushrooms, asparagus, and cucumber intermingle with crispy tempura bits, blanketed by a layer of sesame seeds.",
@@ -73,7 +73,7 @@ const menuItems = [
   },
   {
     id: "10",
-    imageSource: "../../public/ocean_breeze.jpg",
+    imageSource: "/ocean_breeze.jpg",
     title: "OCEAN BREEZE",
     description:
       "A medley of fresh shrimp, crab stick, and avocado, laced with a gentle touch of zesty yuzu-infused tobiko.",
@@ -81,7 +81,7 @@ const menuItems = [
   },
   {
     id: "11",
-    imageSource: "../../public/tokyo_blossom.jpg",
+    imageSource: "/tokyo_blossom.jpg",
     title: "TOKYO BLOSSOM",
     description:
       "Delicate pink soy paper envelopes a blend of tuna, crab stick, and cucumber, embellished with edible flower petals.",
@@ -89,7 +89,7 @@ const menuItems = [
   },
   {
     id: "12",
-    imageSource: "../../public/sunrise_bliss.jpg",
+    imageSource: "/sunrise_bliss.jpg",
     title: "SUNRISE BLISS",
     description:
       "A delicate combination of fresh salmon, cream cheese, and asparagus, rolled in orange-hued tobiko for a burst of sunrise-inspired flavors.",
@@ -97,7 +97,7 @@ const menuItems = [
   },
   {
     id: "13",
-    imageSource: "../../public/mango_tango.jpg",
+    imageSource: "/mango_tango.jpg",
     title: "MANGO TANGO",
     description:
       "Tempura shrimp, cucumber, and avocado dance alongside sweet mango slices, drizzled with a tangy mango sauce.",
@@ -105,7 +105,7 @@ const menuItems = [
   },
   {
     id: "14",
-    imageSource: "../../public/truffle_indulgence.jpg",
+    imageSource: "/truffle_indulgence.jpg",
     title: "TRUFFLE INDULGENCE",
     description:
       "Decadent slices of black truffle grace a roll of succulent wagyu beef, cucumber, and microgreens, culminating in an exquisite umami symphony.",
@@ -113,7 +113,7 @@ const menuItems = [
   },
   {
     id: "15",
-    imageSource: "../../public/pacific_firecracker.jpg",
+    imageSource: "/pacific_firecracker.jpg",
     title: "PACIFIC FIRECRACKER",
     description:
       "Spicy crab salad, tempura shrimp, and jalapeño peppers combine in a fiery ensemble, accented with a chili-infused aioli.",
@@ -121,7 +121,7 @@ const menuItems = [
   },
   {
     id: "16",
-    imageSource: "../../public/eternal_eel.jpg",
+    imageSource: "/eternal_eel.jpg",
     title: "ETERNAL EEL",
     description:
       "An enchanting blend of eel tempura, foie gras, and cucumber, elegantly layered with truffle oil and gold leaf for a touch of opulence.",

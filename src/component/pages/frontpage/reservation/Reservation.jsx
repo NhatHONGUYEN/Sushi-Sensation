@@ -6,10 +6,6 @@ export default function Reservation() {
     <ReservationStyled>
       <Navbar />
       <div className="image-presentation">
-        <img
-          src="../../../../../public/image-for-reservation.jpg"
-          alt="image-for-reservation"
-        />
         <div className="book-a-table">
           BOOK <br /> A TABLE
         </div>
@@ -45,14 +41,15 @@ const ReservationStyled = styled.div`
   display: flex;
   height: 97vh;
   margin: 10px;
+  position: relative;
 
   .image-presentation {
     flex: 1;
-    background-image: url("../../../../../public/image-for-reservation.jpg");
+    background-image: url("/image-for-reservation.jpg");
     background-position: center top 15%;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+
     border-radius: 20px;
 
     img {
