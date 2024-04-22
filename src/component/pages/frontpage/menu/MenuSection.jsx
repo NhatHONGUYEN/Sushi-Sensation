@@ -1,5 +1,4 @@
-import { useRef } from "react";
-import { MenuItem } from "./MenuItem";
+import { MenuItem } from "./MenuItems/MenuItem";
 
 export const MenuSection = ({ title, items, titleRef }) => (
   <div className="menu_section">

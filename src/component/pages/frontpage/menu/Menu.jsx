@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Navbar from "../navbar/Navbar";
-import MenuBanner from "./MenuBanner";
-import MenuItems from "./MenuItems";
+import MenuBanner from "./MenuBanner/MenuBanner";
+import MenuItems from "./MenuItems/MenuItems";
 import { scrollToSection } from "./scrollFunctions";
 import { useRef } from "react";
 
