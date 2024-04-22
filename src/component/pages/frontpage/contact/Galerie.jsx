@@ -29,8 +29,7 @@ const GalerieStyled = styled.div`
   img {
     height: 23vh;
     object-fit: cover;
-    width: 25vh;
-
+    width: 100%;
     border-radius: 15px;
   }
 `;

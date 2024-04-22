@@ -9,11 +9,11 @@ export default function Contact() {
   return (
     <ContactStyled>
       <div className="contact">
+        <Navbar />
         <div className="contact-text">CONTACT</div>
       </div>
 
-      <div className="info-for-contact">
-        <Navbar />
+      <div className="right-side-for-contact">
         <OpeningHours />
         <Galerie />
         <MapContainerComponent />
@@ -25,19 +25,18 @@ export default function Contact() {
 
 const ContactStyled = styled.div`
   display: flex;
-  justify-content: space-around;
-  height: 97vh;
-  margin: 10px;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
   gap: 10px;
   position: relative;
 
   .contact {
-    flex: 1;
+    width: 50%;
     background-image: url("/image-for-contact.jpg");
     background-position: center bottom 20%;
     background-size: cover;
     background-repeat: no-repeat;
-
     border-radius: 20px;
 
     img {
@@ -54,11 +53,14 @@ const ContactStyled = styled.div`
       letter-spacing: 5px;
     }
   }
-  .info-for-contact {
-    width: 50%;
+
+  .right-side-for-contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
+
+    width: 50%;
+    height: 100%;
   }
 `;

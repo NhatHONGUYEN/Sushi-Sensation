@@ -20,7 +20,6 @@ const MapContainerComponent = () => {
   );
 };
 const StyledMapContainer = styled(MapContainer)`
-  height: 48vh;
   border-radius: 15px;
 `;
 export default MapContainerComponent;
