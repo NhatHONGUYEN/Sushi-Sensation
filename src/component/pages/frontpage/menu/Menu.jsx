@@ -1,8 +1,9 @@
+import { useRef } from "react";
 import styled from "styled-components";
 import { fakeMenu } from "../../../../fakedata/fakeMenu";
 import { MenuItem } from "./MenuItem";
 import Navbar from "../navbar/Navbar";
-import { useRef } from "react";
+import { FiArrowUpCircle } from "react-icons/fi";
 
 export default function Menu() {
   const menuItems = fakeMenu.menuItems;
@@ -10,11 +11,17 @@ export default function Menu() {
   const makiRef = useRef(null);
   const uramakiRef = useRef(null);
   const specialRollsRef = useRef(null);
+  const navRef = useRef(null);
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToTop = () => {
+    navRef.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <MenuStyled>
       <Navbar />
@@ -23,7 +30,7 @@ export default function Menu() {
       </div>
 
       <div className="menu_items">
-        <div className="navigation">
+        <div ref={navRef} className="navigation">
           <a
             href="#maki"
             onClick={(event) => {
@@ -71,6 +78,10 @@ export default function Menu() {
         {menuItems.slice(10).map((menuItem) => (
           <MenuItem key={menuItem.id} {...menuItem} />
         ))}
+        <FiArrowUpCircle
+          onClick={scrollToTop}
+          className="scroll-to-top-button"
+        />
       </div>
     </MenuStyled>
   );
@@ -191,5 +202,14 @@ const MenuStyled = styled.div`
       text-decoration: none;
       font-size: 14px;
     }
+  }
+
+  .scroll-to-top-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #efe7d2;
   }
 `;
