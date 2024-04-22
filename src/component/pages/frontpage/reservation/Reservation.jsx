@@ -38,10 +38,11 @@ export default function Reservation() {
 }
 
 const ReservationStyled = styled.div`
+  height: 100vh;
   display: flex;
-  height: 97vh;
-  margin: 10px;
   position: relative;
+  padding: 10px;
+  gap: 10px;
 
   .image-presentation {
     flex: 1;

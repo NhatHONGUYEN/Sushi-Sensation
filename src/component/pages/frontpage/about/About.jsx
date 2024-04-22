@@ -60,11 +60,12 @@ export default function About() {
 }
 
 const AboutStyled = styled.div`
-  height: 97vh;
-  margin: 10px;
-  display: flex;
   justify-content: space-around;
+  height: 100vh;
+  display: flex;
   position: relative;
+  padding: 10px;
+  gap: 10px;
 
   .image-for-about {
     width: 50%;

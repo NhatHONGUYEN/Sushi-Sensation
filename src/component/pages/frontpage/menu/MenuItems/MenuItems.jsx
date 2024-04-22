@@ -1,4 +1,4 @@
-import { MenuSection } from "../MenuSection";
+import { MenuSection } from "./MenuSection";
 import { MenuNavigation } from "./MenuNavigation";
 import { scrollToTop } from "../scrollFunctions";
 import { fakeMenu } from "../../../../../fakedata/fakeMenu";

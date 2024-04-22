@@ -6,7 +6,7 @@ import styled from "styled-components";
 export default function LinkItem({ to, imgSrc, alt, label }) {
   return (
     <Link to={to}>
-      <LinkItemStyled className="image-container">
+      <LinkItemStyled>
         <img src={imgSrc} alt={alt} />
         <Button className="button_to">
           {label} <span className="spacer"></span>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Hamburger from "hamburger-react";
-import NavButton from "../../../../reusible ui/NavButton";
+import NavButton from "./NavButton";
 
 export default function Navbar() {
   return (
@@ -38,7 +38,7 @@ const NavbarStyled = styled.nav`
   position: absolute;
   top: 5vh;
   left: 5vh;
-  width: 60vh;
+  width: 40vh;
   height: 7vh;
   z-index: 1000;
 

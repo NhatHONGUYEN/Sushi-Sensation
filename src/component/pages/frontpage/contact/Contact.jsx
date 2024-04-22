@@ -8,8 +8,8 @@ import Navbar from "../navbar/Navbar";
 export default function Contact() {
   return (
     <ContactStyled>
+      <Navbar />
       <div className="contact">
-        <Navbar />
         <div className="contact-text">CONTACT</div>
       </div>
 
@@ -38,10 +38,6 @@ const ContactStyled = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
-
-    img {
-      display: none;
-    }
 
     .contact-text {
       position: absolute;

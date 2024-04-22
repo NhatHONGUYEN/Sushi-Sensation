@@ -1,4 +1,4 @@
-import { MenuItem } from "./MenuItems/MenuItem";
+import { MenuItem } from "./MenuItem";
 
 export const MenuSection = ({ title, items, titleRef }) => (
   <div className="menu_section">
