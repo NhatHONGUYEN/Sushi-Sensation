@@ -22,7 +22,6 @@ const VideoContainerStyled = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: relative;
     border-radius: 20px;
   }
   .title {

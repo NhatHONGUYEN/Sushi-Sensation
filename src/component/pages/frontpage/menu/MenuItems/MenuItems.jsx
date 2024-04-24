@@ -1,7 +1,7 @@
 import { MenuSection } from "./MenuSection";
 import { MenuNavigation } from "./MenuNavigation";
-import { scrollToSection, scrollToTop } from "./scrollFunctions";
-import { fakeMenu } from "../../../../fakedata/fakeMenu";
+import { scrollToTop } from "../scrollFunctions";
+import { fakeMenu } from "../../../../../fakedata/fakeMenu";
 import { FiArrowUpCircle } from "react-icons/fi";
 
 export default function MenuItems({ sections, scrollToSection }) {

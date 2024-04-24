@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Navbar from "../navbar/Navbar";
-import MenuBanner from "./MenuBanner";
-import MenuItems from "./MenuItems";
+import MenuBanner from "./MenuBanner/MenuBanner";
+import MenuItems from "./MenuItems/MenuItems";
 import { scrollToSection } from "./scrollFunctions";
 import { useRef } from "react";
 
@@ -21,12 +21,13 @@ export default function Menu() {
   );
 }
 const MenuStyled = styled.div`
-  display: flex;
   justify-content: space-around;
-  height: 97vh;
-  margin: 10px;
-  position: relative;
 
+  height: 100vh;
+  display: flex;
+  position: relative;
+  padding: 10px;
+  gap: 10px;
   .menu_items {
     border: 1px solid #efe7d2;
     border-radius: 20px;

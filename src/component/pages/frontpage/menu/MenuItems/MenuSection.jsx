@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { MenuItem } from "./MenuItem";
 
 export const MenuSection = ({ title, items, titleRef }) => (
