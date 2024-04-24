@@ -1,5 +1,5 @@
 import { FiArrowRightCircle } from "react-icons/fi";
-import Button from "../../../reusible ui/Button";
+import { Button } from "../../../reusible ui/Button";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 

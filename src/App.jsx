@@ -1,8 +1,7 @@
-import React from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
-import "./component/pages/animation/fadeInFromRight.css";
+import "./animation/fadeInFromRight.css";
 import About from "./component/pages/frontpage/about/About.jsx";
 import Contact from "./component/pages/frontpage/contact/Contact.jsx";
 import ErrorPage from "./component/pages/error/ErrorPage.jsx";

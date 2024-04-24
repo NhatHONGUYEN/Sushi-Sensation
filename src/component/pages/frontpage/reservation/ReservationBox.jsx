@@ -21,10 +21,8 @@ const ReservationBoxStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10vh;
-  margin-left: 20px;
+  padding-top: 10%;
   h1 {
-    margin-bottom: 35px;
     color: #efe7d2;
   }
 
@@ -33,9 +31,9 @@ const ReservationBoxStyled = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
     font-size: 20px;
     text-align: center;
     color: #efe7d2;
+    margin: 5% 0 10% 0;
   }
 `;

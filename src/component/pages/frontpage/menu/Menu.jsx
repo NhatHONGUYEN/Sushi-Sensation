@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Navbar from "../navbar/Navbar";
 import MenuBanner from "./MenuBanner/MenuBanner";
 import MenuItems from "./MenuItems/MenuItems";
-import { scrollToSection } from "./scrollFunctions";
+import { scrollToSection } from "../../../../helper/scrollFunctions";
 import { useRef } from "react";
 
 export default function Menu() {
@@ -22,12 +22,12 @@ export default function Menu() {
 }
 const MenuStyled = styled.div`
   justify-content: space-around;
-
   height: 100vh;
   display: flex;
   position: relative;
   padding: 10px;
   gap: 10px;
+
   .menu_items {
     border: 1px solid #efe7d2;
     border-radius: 20px;
@@ -38,7 +38,7 @@ const MenuStyled = styled.div`
     font-size: 13px;
     overflow-y: auto;
     height: 100%;
-    margin: 0 10px;
+
     scrollbar-width: none;
 
     &::-webkit-scrollbar {

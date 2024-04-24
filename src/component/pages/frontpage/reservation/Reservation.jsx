@@ -19,5 +19,4 @@ const ReservationStyled = styled.div`
   display: flex;
   position: relative;
   padding: 10px;
-  gap: 10px;
 `;

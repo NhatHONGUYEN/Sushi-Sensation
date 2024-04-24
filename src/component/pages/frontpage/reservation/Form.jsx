@@ -1,5 +1,9 @@
 import { useRef, useState } from "react";
 import styled from "styled-components";
+import Input from "../../../../reusible ui/Input.jsx";
+import Select from "./Select";
+import DateInput from "./DateInput";
+import { timeOptions } from "../../../../fakedata/timeOptions";
 
 export default function Form() {
   const [name, setName] = useState("");
@@ -9,157 +13,106 @@ export default function Form() {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
 
-  const [showGuests, setShowGuests] = useState(false);
-  const [showDate, setShowDate] = useState(false);
-  const [showTime, setShowTime] = useState(false);
-
   const guestsRef = useRef(null);
   const dateRef = useRef(null);
   const timeRef = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Traitez les données du formulaire ici
   };
 
   return (
     <FormContainerStyled onSubmit={handleSubmit}>
       <div className="input-container">
-        <label htmlFor="name">Name</label>
-        <input
+        <Input
           type="text"
-          id="name"
+          placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          required
         />
       </div>
       <div className="input-container">
-        <label htmlFor="phone">Phone Number</label>
-        <input
+        <Input
           type="tel"
-          id="phone"
+          placeholder="Phone Number"
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
-          required
         />
       </div>
       <div className="input-container">
-        <label htmlFor="email">Email</label>
-        <input
+        <Input
           type="email"
-          id="email"
+          placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          required
         />
       </div>
+
       <div className="flex-container">
-        <div className="input-container">
-          <label
-            htmlFor="guests"
-            onClick={() => {
-              setShowGuests(!showGuests);
-              if (showGuests) {
-                guestsRef.current.blur();
-              } else {
-                guestsRef.current.focus();
-              }
-            }}
-          >
-            Guests
-          </label>
-          {showGuests && (
-            <select
-              id="guests"
-              ref={guestsRef}
-              value={guests}
-              onChange={(e) => setGuests(e.target.value)}
-              required
-            >
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-          )}
+        <div className="input-container select-container">
+          <Select
+            id="guests"
+            ref={guestsRef}
+            options={[1, 2, 3, 4, 5, 6]}
+            value={guests}
+            onChange={(e) => setGuests(e.target.value)}
+          />
         </div>
-        <div className="input-container">
-          <label
-            htmlFor="date"
-            onClick={() => {
-              setShowDate(!showDate);
-              if (showDate) {
-                dateRef.current.blur();
-              } else {
-                dateRef.current.focus();
-              }
-            }}
-          >
-            Date
-          </label>
-          {showDate && (
-            <input
-              type="date"
-              id="date"
-              ref={dateRef}
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
-              required
-            />
-          )}
+        <div className="input-container select-container">
+          <DateInput
+            ref={dateRef}
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
         </div>
-        <div className="input-container">
-          <label
-            htmlFor="time"
-            onClick={() => {
-              setShowTime(!showTime);
-              if (showTime) {
-                timeRef.current.blur();
-              } else {
-                timeRef.current.focus();
-              }
-            }}
-          >
-            Time
-          </label>
-          {showTime && (
-            <input
-              type="time"
-              id="time"
-              ref={timeRef}
-              value={time}
-              onChange={(e) => setTime(e.target.value)}
-              required
-            />
-          )}
+        <div className="input-container select-container">
+          <Select
+            id="time"
+            ref={timeRef}
+            options={timeOptions}
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
+          />
         </div>
       </div>
-      <button type="submit">Reserve</button>
+
+      <button className="button-reservation" type="submit">
+        Reserve
+      </button>
     </FormContainerStyled>
   );
 }
-
 const FormContainerStyled = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  width: 60%;
+  width: 70%;
 
   .input-container {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 100%;
+    width: 50%;
+    color: #efe7d2;
   }
 
   .flex-container {
     display: flex;
     gap: 1rem;
-    width: 100%;
+    width: 50%;
+  }
+
+  .select-container {
+    select,
+    input[type="date"] {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 0.25rem;
+      color: #000;
+      font-size: 15px;
+      background: #efe7d2;
+    }
   }
 
   input,
@@ -167,18 +120,25 @@ const FormContainerStyled = styled.form`
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 0.25rem;
+    font-size: 15px;
   }
 
-  label,
-  input::placeholder,
+  input {
+    color: #efe7d2;
+    background: transparent;
+  }
+
+  input::placeholder {
+    color: #efe7d2;
+  }
+
   select option {
-    color: red;
   }
 
-  button {
+  .button-reservation {
+    width: 50%;
     padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #efe7d2;
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
