@@ -1,5 +1,9 @@
 import { useRef, useState } from "react";
 import styled from "styled-components";
+import Input from "./Input";
+import Select from "./Select";
+import DateInput from "./DateInput";
+import { timeOptions } from "./timeOptions";
 
 export default function Form() {
   const [name, setName] = useState("");
@@ -17,92 +21,58 @@ export default function Form() {
     e.preventDefault();
   };
 
-  const today = new Date().toISOString().split("T")[0];
-
-  const timeOptions = [
-    "12:00",
-    "12:30",
-    "13:00",
-    "13:30",
-    "14:00",
-    "18:00",
-    "18:30",
-    "19:00",
-    "19:30",
-    "20:00",
-  ];
-
   return (
     <FormContainerStyled onSubmit={handleSubmit}>
       <div className="input-container">
-        <input
+        <Input
           type="text"
           placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          required
         />
       </div>
       <div className="input-container">
-        <input
+        <Input
           type="tel"
           placeholder="Phone Number"
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
-          required
         />
       </div>
       <div className="input-container">
-        <input
+        <Input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          required
         />
       </div>
+
       <div className="flex-container">
         <div className="input-container select-container">
-          <select
+          <Select
             id="guests"
             ref={guestsRef}
+            options={[1, 2, 3, 4, 5, 6]}
             value={guests}
             onChange={(e) => setGuests(e.target.value)}
-            required
-          >
-            <option value="">1 Guest</option>
-            <option value="2">2 Guest</option>
-            <option value="3">3 Guest</option>
-            <option value="4">4 Guest</option>
-            <option value="5">5 Guest</option>
-            <option value="6">6 Guest</option>
-          </select>
-        </div>
-        <div className="input-container select-container">
-          <input
-            type="date"
-            id="date"
-            ref={dateRef}
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-            min={today}
-            required
           />
         </div>
         <div className="input-container select-container">
-          <select
+          <DateInput
+            ref={dateRef}
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
+        </div>
+        <div className="input-container select-container">
+          <Select
             id="time"
             ref={timeRef}
+            options={timeOptions}
             value={time}
             onChange={(e) => setTime(e.target.value)}
-            required
-          >
-            {timeOptions.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
+          />
         </div>
       </div>
 
