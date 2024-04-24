@@ -1,15 +1,13 @@
 import styled from "styled-components";
-import Hamburger from "hamburger-react";
 import NavButton from "./NavButton";
+import HamburgerIcon from "../../../../reusible ui/HamburgerIcon";
 
 export default function Navbar() {
   return (
     <NavbarStyled>
       <ul>
-        <li className="toggle_navbar_button">
-          <NavButton icon to="/menuNav">
-            <Hamburger className="hamburger-react" />
-          </NavButton>
+        <li className="hamburger-button">
+          <HamburgerIcon to="/menuNav" />
         </li>
         <li className="qitchen-from-navbar">
           <NavButton className="qitchen-button" to="/frontpage">
@@ -71,38 +69,6 @@ const NavbarStyled = styled.nav`
 
     .book-button {
       border: 1px solid #efe7d2;
-    }
-
-    .toggle_navbar_button {
-      &:hover .hamburger-react {
-        transform: scale(1.1);
-      }
-
-      .hamburger-react {
-        div {
-          height: 3px;
-          transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-
-          &:nth-child(1),
-          &:nth-child(3) {
-            transform-origin: left;
-          }
-
-          &:nth-child(2) {
-            transform-origin: center;
-          }
-        }
-
-        &:hover div:nth-child(1),
-        &:hover div:nth-child(3) {
-          opacity: 0;
-          transform: translateX(-20px);
-        }
-
-        &:hover div:nth-child(2) {
-          transform: rotate(45deg);
-        }
-      }
     }
   }
 `;
