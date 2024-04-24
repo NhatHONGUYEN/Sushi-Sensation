@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Navbar from "../navbar/Navbar";
 import MenuBanner from "./MenuBanner/MenuBanner";
 import MenuItems from "./MenuItems/MenuItems";
-import { scrollToSection } from "./scrollFunctions";
+import { scrollToSection } from "../../../../helper/scrollFunctions";
 import { useRef } from "react";
 
 export default function Menu() {

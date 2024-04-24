@@ -1,9 +1,9 @@
 import { useRef, useState } from "react";
 import styled from "styled-components";
-import Input from "./Input";
+import Input from "../../../../reusible ui/Input.jsx";
 import Select from "./Select";
 import DateInput from "./DateInput";
-import { timeOptions } from "./timeOptions";
+import { timeOptions } from "../../../../fakedata/timeOptions";
 
 export default function Form() {
   const [name, setName] = useState("");
