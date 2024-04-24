@@ -21,8 +21,7 @@ const ReservationBoxStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10vh;
-
+  padding-top: 10%;
   h1 {
     color: #efe7d2;
   }

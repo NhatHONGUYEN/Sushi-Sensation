@@ -93,14 +93,14 @@ const FormContainerStyled = styled.form`
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 100%;
+    width: 50%;
     color: #efe7d2;
   }
 
   .flex-container {
     display: flex;
     gap: 1rem;
-    width: 100%;
+    width: 50%;
   }
 
   .select-container {
@@ -136,7 +136,6 @@ const FormContainerStyled = styled.form`
   }
 
   .button-reservation {
-    margin-top: 25%;
     width: 50%;
     padding: 0.5rem 1rem;
     background-color: #efe7d2;
