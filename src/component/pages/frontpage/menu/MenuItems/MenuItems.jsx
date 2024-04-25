@@ -56,5 +56,7 @@ const MenuItemsStyled = styled.div`
     margin: 60px 0;
     font-size: 30px;
     color: #efe7d2;
+    justify-content: center;
+    display: flex;
   }
 `;

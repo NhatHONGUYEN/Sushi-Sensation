@@ -53,9 +53,9 @@ const MenuItemStyled = styled.div`
 
     .item_description {
       max-width: 400px;
-      font-size: 14px;
+      font-size: 12px;
       color: #efe7d2;
-      margin-top: 5px;
+      margin-top: 10px;
     }
   }
 `;

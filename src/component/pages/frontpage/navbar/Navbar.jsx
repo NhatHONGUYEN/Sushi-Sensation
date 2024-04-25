@@ -57,12 +57,12 @@ const NavbarStyled = styled.nav`
     }
 
     .about-button a {
-      transition-duration: 0.5s; // Ajoutez la durée spécifique ici
+      transition-duration: 0.5s;
     }
 
     .menu-button:hover a,
     .about-button:hover a {
-      border: 1px solid rgba(239, 221, 114, 0.2); // Corrigez la propriété border ici
+      border: 1px solid rgba(239, 221, 114, 0.2);
     }
 
     li {
