@@ -15,14 +15,14 @@ export default function Navbar() {
           </NavButton>
         </li>
         <li className="button menu-button">
-          <NavButton to="/menu">Menu</NavButton>
+          <NavButton to="/menu">MENU</NavButton>
         </li>
         <li className="button about-button">
-          <NavButton to="/about">About</NavButton>
+          <NavButton to="/about">ABOUT</NavButton>
         </li>
         <li className="button book-a-table">
           <NavButton primary className="book-button" to="/reservation">
-            Book a Table
+            BOOK A TABLE
           </NavButton>
         </li>
       </ul>
@@ -31,12 +31,12 @@ export default function Navbar() {
 }
 
 const NavbarStyled = styled.nav`
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   position: absolute;
   top: 5vh;
   left: 5vh;
-  width: 435px;
+  width: 500px;
   height: 50px;
   z-index: 1000;
 
@@ -46,20 +46,27 @@ const NavbarStyled = styled.nav`
     align-items: center;
     list-style: none;
     height: 100%;
-    width: 100%;
 
     .menu-button a,
     .about-button a {
+      padding: 10px 10px;
       border: 1px solid transparent;
+      font-size: 12px;
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
+        border-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    }
+
+    .about-button a {
+      transition-duration: 0.5s; // Ajoutez la durée spécifique ici
     }
 
     .menu-button:hover a,
     .about-button:hover a {
-      border: 1px solid #efe7d2;
+      border: 1px solid rgba(239, 221, 114, 0.2); // Corrigez la propriété border ici
     }
 
     li {
-      margin-right: 1rem;
+      margin: 10px;
     }
 
     .qitchen-from-navbar a {
@@ -68,7 +75,15 @@ const NavbarStyled = styled.nav`
     }
 
     .book-button {
-      border: 1px solid #efe7d2;
+      border: 1px solid rgba(239, 221, 114, 0.2);
+      font-size: 12px;
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
+        background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+      padding: 10px 10px;
+
+      &:hover {
+        background-color: rgba(239, 231, 210, 0.1);
+      }
     }
   }
 `;
