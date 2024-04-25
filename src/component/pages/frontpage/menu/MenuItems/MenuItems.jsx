@@ -4,6 +4,7 @@ import { scrollToTop } from "../../../../../helper/scrollFunctions";
 import { fakeMenu } from "../../../../../fakedata/fakeMenu";
 import { FiArrowUpCircle } from "react-icons/fi";
 import styled from "styled-components";
+import { theme } from "../../../../../theme";
 
 export default function MenuItems({ sections, scrollToSection }) {
   const menuItems = fakeMenu.menuItems;
@@ -37,8 +38,8 @@ export default function MenuItems({ sections, scrollToSection }) {
 }
 
 const MenuItemsStyled = styled.div`
-  border: 1px solid rgba(239, 221, 114, 0.2);
-  border-radius: 20px;
+  border: 1px solid ${theme.colors.borderLine};
+  border-radius: ${theme.borderRadius.extraRound};
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -54,8 +55,8 @@ const MenuItemsStyled = styled.div`
   .menu_title {
     text-align: center;
     margin: 60px 0;
-    font-size: 30px;
-    color: #efe7d2;
+    font-size: ${theme.fonts.size.P4};
+    color: ${theme.colors.cream};
     justify-content: center;
     display: flex;
   }

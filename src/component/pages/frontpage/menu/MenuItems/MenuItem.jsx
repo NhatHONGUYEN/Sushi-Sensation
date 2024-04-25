@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../../../../theme";
 
 export const MenuItem = ({ imageSource, title, description, price }) => (
   <MenuItemStyled className="menu_item">
@@ -32,7 +33,7 @@ const MenuItemStyled = styled.div`
       font-size: 17px;
       display: flex;
       justify-content: space-between;
-      color: #efe7d2;
+      color: ${theme.colors.cream};
 
       span {
         white-space: nowrap;
@@ -40,21 +41,21 @@ const MenuItemStyled = styled.div`
 
       .dots {
         flex-grow: 1;
-        border-bottom: 1px dotted #efe7d2;
+        border-bottom: 1px dotted ${theme.colors.cream};
         margin: 3px 10px;
       }
 
       .item_price {
-        font-weight: bold;
+        font-weight: ${theme.fonts.weights.bold};
         margin-right: 50px;
-        color: #efe7d2;
+        color: ${theme.colors.cream};
       }
     }
 
     .item_description {
       max-width: 400px;
-      font-size: 12px;
-      color: #efe7d2;
+      font-size: ${theme.fonts.size.XS};
+      color: ${theme.colors.cream};
       margin-top: 10px;
     }
   }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../../../theme";
 
 export default function ReservationImage() {
   return (
@@ -19,16 +20,15 @@ const ReservationImageStyled = styled.div`
   background-position: center top 15%;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 20px;
+  border-radius: ${theme.borderRadius.extraRound};
 
   .book-a-table {
     position: absolute;
     bottom: 40px;
     left: 40px;
-    color: #efe7d2;
+    color: ${theme.colors.cream};
     font-size: 4rem;
     z-index: 1;
-    font-family: forum;
-    letter-spacing: 5px;
+    letter-spacing: ${theme.spacing.xxs};
   }
 `;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Form from "./Form";
+import { theme } from "../../../../theme";
 
 export default function ReservationBox() {
   return (
@@ -16,14 +17,14 @@ export default function ReservationBox() {
 
 const ReservationBoxStyled = styled.div`
   width: 50%;
-  border: 1px solid rgba(239, 221, 114, 0.2);
-  border-radius: 20px;
+  border: 1px solid ${theme.colors.borderLine};
+  border-radius: ${theme.borderRadius.extraRound};
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 10%;
   h1 {
-    color: #efe7d2;
+    color: ${theme.colors.cream};
   }
 
   p {
@@ -31,9 +32,9 @@ const ReservationBoxStyled = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: ${theme.fonts.size.P2};
     text-align: center;
-    color: #efe7d2;
+    color: ${theme.colors.cream};
     margin: 5% 0 10% 0;
   }
 `;

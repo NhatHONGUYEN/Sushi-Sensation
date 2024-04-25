@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { FiArrowUpCircle } from "react-icons/fi";
 import styled from "styled-components";
+import { theme } from "../../../../../theme";
 
 export const MenuNavigation = ({ sections, scrollToSection }) => {
   const navRef = useRef(null);
@@ -41,8 +42,8 @@ const MenuNavigationStyled = styled.div`
   a {
     margin-right: 5px;
     padding: 5px 10px;
-    border: 1px solid rgba(239, 221, 114, 0.2);
-    color: #efe7d2;
+    border: 1px solid ${theme.colors.borderLine};
+    color: ${theme.colors.cream};
     border-radius: 5px;
     text-decoration: none;
     font-size: 14px;
@@ -61,7 +62,7 @@ const ScrollToTopButton = styled.button`
   right: 2rem;
   cursor: pointer;
   font-size: 2rem;
-  color: #efe7d2;
+  color: ${theme.colors.cream};
   background: none;
   border: none;
   transition: transform 1s ease-in-out;

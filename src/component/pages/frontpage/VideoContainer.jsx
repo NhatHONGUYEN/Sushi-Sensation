@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../../theme";
 
 // import video
 const VIDEO_SRC = "/front-page-video.mp4";
@@ -22,15 +23,14 @@ const VideoContainerStyled = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: ${theme.borderRadius.extraRound};
   }
   .title {
     position: absolute;
     bottom: 5%;
     left: 3%;
     font-size: 6rem;
-    color: #efe7d2;
-    font-family: forum;
-    letter-spacing: 5px;
+    color: ${theme.colors.cream};
+    letter-spacing: ${theme.spacing.xxs};
   }
 `;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import NavButton from "./NavButton";
 import HamburgerIcon from "../../../../reusible ui/HamburgerIcon";
+import { theme } from "../../../../theme";
 
 export default function Navbar() {
   return (
@@ -31,7 +32,7 @@ export default function Navbar() {
 }
 
 const NavbarStyled = styled.nav`
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: ${theme.shadows.strong};
   border-radius: 10px;
   position: absolute;
   top: 5vh;
@@ -51,7 +52,7 @@ const NavbarStyled = styled.nav`
     .about-button a {
       padding: 10px 10px;
       border: 1px solid transparent;
-      font-size: 12px;
+      font-size: ${theme.fonts.size.XS};
       transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
         border-color 0.5s ease-in-out, color 0.5s ease-in-out;
     }
@@ -62,7 +63,7 @@ const NavbarStyled = styled.nav`
 
     .menu-button:hover a,
     .about-button:hover a {
-      border: 1px solid rgba(239, 221, 114, 0.2);
+      border: 1px solid ${theme.colors.borderLine};
     }
 
     li {
@@ -70,13 +71,13 @@ const NavbarStyled = styled.nav`
     }
 
     .qitchen-from-navbar a {
-      font-size: 24px;
+      font-size: ${theme.fonts.size.P3};
       border: none;
     }
 
     .book-button {
-      border: 1px solid rgba(239, 221, 114, 0.2);
-      font-size: 12px;
+      border: 1px solid ${theme.colors.borderLine};
+      font-size: ${theme.fonts.size.XS};
       transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
         background-color 0.5s ease-in-out, color 0.5s ease-in-out;
       padding: 10px 10px;

@@ -1,6 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import styled from "styled-components";
+import { theme } from "../../../../theme";
 
 const position = [50.0755381, 14.4378005];
 
@@ -20,6 +21,6 @@ const MapContainerComponent = () => {
   );
 };
 const StyledMapContainer = styled(MapContainer)`
-  border-radius: 15px;
+  border-radius: ${theme.borderRadius.round};
 `;
 export default MapContainerComponent;

@@ -2,6 +2,7 @@ import { FiArrowRightCircle } from "react-icons/fi";
 import { Button } from "../../../reusible ui/Button";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { theme } from "../../../theme";
 
 export default function LinkItem({ to, imgSrc, alt, label }) {
   return (
@@ -25,7 +26,7 @@ const LinkItemStyled = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: ${theme.borderRadius.extraRound};
     opacity: 0.6;
     transition: opacity 0.5s ease-in-out;
   }

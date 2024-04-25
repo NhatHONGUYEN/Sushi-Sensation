@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import womenWaiting from "/women_waiting.jpg";
+import { theme } from "../../../../theme";
 
 export default function SushiArtistry() {
   return (
@@ -24,30 +25,30 @@ export default function SushiArtistry() {
 const SushiArtistryStyled = styled.div`
   display: flex;
   width: 100%;
-  border-radius: 15px;
+  border-radius: ${theme.borderRadius.round};
   height: 44%;
   gap: 10px;
+  border-radius: ${theme.borderRadius.round};
 
   .sushi-artistry {
-    border-radius: 15px;
-    border: 1px solid rgba(239, 221, 114, 0.2);
+    border: 1px solid ${theme.colors.borderLine};
     height: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 60px 50px;
-    border-radius: 15px;
-    width: 60%;
+    border-radius: ${theme.borderRadius.round};
 
     h1 {
-      font-size: 25px;
-      color: #efe7d2;
+      font-size: ${theme.fonts.size.P3};
+      color: ${theme.colors.cream};
     }
 
     p {
-      font-size: 16px;
+      font-size: ${theme.fonts.size.P0};
 
-      color: #efe7d2;
+      color: ${theme.colors.cream};
     }
   }
 
@@ -55,7 +56,7 @@ const SushiArtistryStyled = styled.div`
     width: 40%;
     height: 100%;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: ${theme.borderRadius.round};
 
     img {
       width: 100%;

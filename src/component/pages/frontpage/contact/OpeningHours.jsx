@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../../../theme";
 
 const OpeningHours = () => {
   return (
@@ -30,25 +31,25 @@ const OpeningHours = () => {
 
 const OpeningHoursStyled = styled.div`
   padding: 10% 5%;
-  border-radius: 15px;
+  border-radius: ${theme.borderRadius.round};
   width: 52vh;
   margin-bottom: 7px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid rgba(239, 221, 114, 0.2);
+  border: 1px solid ${theme.colors.borderLine};
 
   h1 {
-    font-size: 35px;
-    color: #efe7d2;
+    font-size: ${theme.fonts.size.P4};
+    color: ${theme.colors.cream};
   }
   p {
     line-height: 1.5;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    color: #efe7d2;
+    color: ${theme.colors.cream};
   }
 
   .hours {

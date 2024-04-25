@@ -4,6 +4,7 @@ import ContactInfo from "./ContactInfo";
 import styled from "styled-components";
 import MapContainerComponent from "./MapContainerComponent";
 import Navbar from "../navbar/Navbar";
+import { theme } from "../../../../theme";
 
 export default function Contact() {
   return (
@@ -37,16 +38,16 @@ const ContactStyled = styled.div`
     background-position: center bottom 20%;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 20px;
+    border-radius: ${theme.borderRadius.extraRound};
 
     .contact-text {
       position: absolute;
       bottom: 5%;
       left: 3%;
       font-size: 6rem;
-      color: #efe7d2;
+      color: ${theme.colors.cream};
       font-family: forum;
-      letter-spacing: 5px;
+      letter-spacing: ${theme.spacing.xxs};
     }
   }
 

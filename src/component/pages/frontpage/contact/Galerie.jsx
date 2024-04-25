@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import fakeGalerie from "../../../../fakedata/fakeGalerie";
+import { theme } from "../../../../theme";
 
 const Galerie = () => {
   return (
@@ -16,7 +17,7 @@ const Galerie = () => {
 };
 
 const GalerieStyled = styled.div`
-  border-radius: 15px;
+  border-radius: ${theme.borderRadius.round};
   width: 50vh;
 
   .grid {
@@ -30,7 +31,7 @@ const GalerieStyled = styled.div`
     height: 23vh;
     object-fit: cover;
     width: 100%;
-    border-radius: 15px;
+    border-radius: ${theme.borderRadius.round};
   }
 `;
 export default Galerie;

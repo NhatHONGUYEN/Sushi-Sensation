@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { theme } from "../../../../theme";
 
 export default function NavButton({ children, to, primary, icon, ...rest }) {
   return (
@@ -11,9 +12,9 @@ export default function NavButton({ children, to, primary, icon, ...rest }) {
 
 const NavButtonStyled = styled(NavLink)`
   padding: 5px;
-  border-radius: 5px;
+  border-radius: ${theme.borderRadius.smallRound};
   text-decoration: none;
-  color: #efe7d2;
+  color: ${theme.colors.cream};
   padding: 5px;
-  font-size: 15px;
+  font-size: ${theme.fonts.size.SM};
 `;
