@@ -8,14 +8,15 @@ export default function LinkItem({ to, imgSrc, alt, label }) {
     <Link to={to}>
       <LinkItemStyled>
         <img src={imgSrc} alt={alt} />
-        <Button className="button_to">
-          {label} <span className="spacer"></span>
-          <FiArrowRightCircle />
+        <Button>
+          {label}
+          <FiArrowRightCircle className="icon" />
         </Button>
       </LinkItemStyled>
     </Link>
   );
 }
+
 const LinkItemStyled = styled.div`
   position: relative;
   height: 31.5vh;
@@ -25,5 +26,23 @@ const LinkItemStyled = styled.div`
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+    opacity: 0.6;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  &:hover img {
+    opacity: 1;
+  }
+
+  .icon {
+    margin: 10px;
+    opacity: 0.7;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
+  &:hover .icon {
+    // Modifiez ce sélecteur
+    transform: translateX(5px);
+    opacity: 1;
   }
 `;
