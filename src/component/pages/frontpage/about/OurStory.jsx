@@ -36,7 +36,7 @@ const OurStoryStyled = styled.div`
     padding: 60px 50px;
     align-items: center;
     border-radius: 15px;
-    border: 1px solid;
+    border: 1px solid rgba(239, 221, 114, 0.2);
     width: 60%;
 
     color: #efe7d2;

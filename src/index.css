@@ -9,8 +9,7 @@
     
 }
 body {
-    background-image: url('/background_website.jpg');
-    
-   
+    background-image: url('../public/background-light.jpg');
+
    
   }
