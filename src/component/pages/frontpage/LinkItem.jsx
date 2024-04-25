@@ -34,6 +34,15 @@ const LinkItemStyled = styled.div`
     opacity: 1;
   }
 
+  button {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  &:hover button {
+    opacity: 1;
+  }
+
   .icon {
     margin: 10px;
     opacity: 0.7;
@@ -41,7 +50,6 @@ const LinkItemStyled = styled.div`
   }
 
   &:hover .icon {
-    // Modifiez ce sélecteur
     transform: translateX(5px);
     opacity: 1;
   }
