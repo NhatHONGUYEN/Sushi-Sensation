@@ -35,7 +35,7 @@ const TripAdvisorStyled = styled.div`
 
   .trip-satisfaction {
     border-radius: 15px;
-    border: 1px solid #efe7d2;
+    border: 1px solid rgba(239, 221, 114, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;

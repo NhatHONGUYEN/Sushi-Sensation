@@ -30,7 +30,7 @@ const SushiArtistryStyled = styled.div`
 
   .sushi-artistry {
     border-radius: 15px;
-    border: 1px solid #efe7d2;
+    border: 1px solid rgba(239, 221, 114, 0.2);
     height: 100%;
     display: flex;
     flex-direction: column;

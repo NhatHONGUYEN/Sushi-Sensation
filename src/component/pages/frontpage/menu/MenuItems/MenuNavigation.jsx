@@ -16,7 +16,7 @@ export const MenuNavigation = ({ sections, scrollToSection }) => {
       {sections.map((section) => (
         <a
           key={section.name}
-          href={`#${section.name.toLowerCase()}`}
+          href={`#${section.name}`}
           onClick={(event) => {
             event.preventDefault();
             scrollToSection(section.ref);
@@ -41,11 +41,17 @@ const MenuNavigationStyled = styled.div`
   a {
     margin-right: 5px;
     padding: 5px 10px;
-    border: 1px solid white;
+    border: 1px solid rgba(239, 221, 114, 0.2);
     color: #efe7d2;
     border-radius: 5px;
     text-decoration: none;
     font-size: 14px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
+      border-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+    &:hover {
+      border: 1px solid rgba(239, 221, 114, 0.4);
+    }
   }
 `;
 
@@ -58,4 +64,9 @@ const ScrollToTopButton = styled.button`
   color: #efe7d2;
   background: none;
   border: none;
+  transition: transform 1s ease-in-out;
+
+  &:hover {
+    transform: translateY(-20px);
+  }
 `;

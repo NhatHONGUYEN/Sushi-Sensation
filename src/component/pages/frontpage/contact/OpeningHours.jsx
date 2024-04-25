@@ -37,7 +37,7 @@ const OpeningHoursStyled = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #efe7d2;
+  border: 1px solid rgba(239, 221, 114, 0.2);
 
   h1 {
     font-size: 35px;

@@ -39,7 +39,7 @@ const ContactStyled = styled.div`
   flex-direction: column;
   justify-content: space-between;
   border-radius: 15px;
-  border: 1px solid #efe7d2;
+  border: 1px solid rgba(239, 221, 114, 0.2);
 
   h1 {
     font-size: 35px;

@@ -16,7 +16,7 @@ export default function ReservationBox() {
 
 const ReservationBoxStyled = styled.div`
   width: 50%;
-  border: 1px solid #efe7d2;
+  border: 1px solid rgba(239, 221, 114, 0.2);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
