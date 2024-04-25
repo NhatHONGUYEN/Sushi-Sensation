@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../../../../theme";
 
 export default function MenuBanner({ image, text }) {
   return (
@@ -15,7 +16,7 @@ const MenuBannerStyled = styled.div`
   background-position: center top 20%;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 20px;
+  border-radius: ${theme.borderRadius.extraRound};
   position: relative;
 
   img {
@@ -27,8 +28,8 @@ const MenuBannerStyled = styled.div`
     bottom: 5%;
     left: 3%;
     font-size: 6rem;
-    color: #efe7d2;
+    color: ${theme.colors.cream};
     font-family: forum;
-    letter-spacing: 5px;
+    letter-spacing: ${theme.spacing.xxs};
   }
 `;

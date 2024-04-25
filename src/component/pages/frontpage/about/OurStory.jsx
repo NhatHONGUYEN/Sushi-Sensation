@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import cookingForAbout from "/cooking-for-about.jpg";
+import { theme } from "../../../../theme";
 
 export default function OurStory() {
   return (
@@ -29,25 +30,25 @@ const OurStoryStyled = styled.div`
 
   .cooking-our-story {
     height: 100%;
-    border-radius: 15px;
+    border-radius: ${theme.borderRadius.round};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 60px 50px;
     align-items: center;
-    border-radius: 15px;
-    border: 1px solid;
+    border-radius: ${theme.borderRadius.round};
+    border: 1px solid ${theme.colors.borderLine};
     width: 60%;
 
-    color: #efe7d2;
+    color: ${theme.colors.cream};
 
     h1 {
-      font-size: 25px;
-      color: #efe7d2;
+      font-size: ${theme.fonts.size.P3};
+      color: ${theme.colors.cream};
     }
     p {
-      font-size: 16px;
-      color: #efe7d2;
+      font-size: ${theme.fonts.size.P0};
+      color: ${theme.colors.cream};
     }
   }
 
@@ -55,7 +56,7 @@ const OurStoryStyled = styled.div`
     width: 40%;
     height: 100%;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: ${theme.borderRadius.round};
 
     img {
       width: 100%;

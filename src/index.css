@@ -1,15 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: forum;
-    
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: forum;
 }
 body {
-    background-image: url('/background_website.jpg');
-   
-   
-  }
+  background-image: url("../background-light.jpg");
+}

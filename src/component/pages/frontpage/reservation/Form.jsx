@@ -4,6 +4,7 @@ import Input from "../../../../reusible ui/Input.jsx";
 import Select from "./Select";
 import DateInput from "./DateInput";
 import { timeOptions } from "../../../../fakedata/timeOptions";
+import { theme } from "../../../../theme/index.js";
 
 export default function Form() {
   const [name, setName] = useState("");
@@ -77,7 +78,7 @@ export default function Form() {
       </div>
 
       <button className="button-reservation" type="submit">
-        Reserve
+        RESERVE
       </button>
     </FormContainerStyled>
   );
@@ -94,7 +95,7 @@ const FormContainerStyled = styled.form`
     flex-direction: column;
     gap: 0.5rem;
     width: 50%;
-    color: #efe7d2;
+    color: ${theme.colors.cream};
   }
 
   .flex-container {
@@ -107,29 +108,28 @@ const FormContainerStyled = styled.form`
     select,
     input[type="date"] {
       padding: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 0.25rem;
-      color: #000;
-      font-size: 15px;
-      background: #efe7d2;
+      border-radius: ${theme.borderRadius.smallRound};
+      color: ${theme.colors.black};
+      font-size: ${theme.fonts.size.SM};
+      background: ${theme.colors.cream};
     }
   }
 
   input,
   select {
     padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
+    border: 1px solid ${theme.colors.cream};
+    border-radius: ${theme.borderRadius.smallRound};
     font-size: 15px;
   }
 
   input {
-    color: #efe7d2;
+    color: ${theme.colors.cream};
     background: transparent;
   }
 
   input::placeholder {
-    color: #efe7d2;
+    color: ${theme.colors.cream};
   }
 
   select option {
@@ -138,9 +138,17 @@ const FormContainerStyled = styled.form`
   .button-reservation {
     width: 50%;
     padding: 0.5rem 1rem;
-    background-color: #efe7d2;
+    background-color: ${theme.colors.cream};
     border: none;
-    border-radius: 0.25rem;
+    border-radius: ${theme.borderRadius.smallRound};
     cursor: pointer;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
+      background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+    &:hover {
+      background: transparent;
+      border: 1px solid ${theme.colors.cream};
+      color: ${theme.colors.cream};
+    }
   }
 `;

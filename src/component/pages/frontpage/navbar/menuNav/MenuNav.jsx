@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import HamburgerIcon from "../../../../../reusible ui/HamburgerIcon";
+import { theme } from "../../../../../theme";
 
 export default function MenuNav() {
   return (
@@ -55,17 +56,17 @@ const MenuNavStyled = styled.div`
 
         a {
           text-decoration: none;
-          color: #efe7d2;
-          font-size: 50px;
+          color: ${theme.colors.cream};
+          font-size: ${theme.fonts.size.P5};
           transition: color 0.5s ease-in-out;
 
           &:hover {
-            color: #f5c78f;
+            color: ${theme.colors.cream};
           }
         }
       }
       .top-border {
-        border-top: 2px solid #efe7d2;
+        border-top: 2px solid ${theme.colors.cream};
         width: 20%;
         padding-top: 20px;
         justify-content: center;
@@ -73,7 +74,7 @@ const MenuNavStyled = styled.div`
       }
 
       .bottom-border {
-        border-bottom: 2px solid #efe7d2;
+        border-bottom: 2px solid ${theme.colors.cream};
         width: 20%;
         padding-bottom: 20px;
         justify-content: center;

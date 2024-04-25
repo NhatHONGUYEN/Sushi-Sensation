@@ -1,5 +1,6 @@
 import { CiFacebook, CiInstagram, CiTwitter } from "react-icons/ci";
 import styled from "styled-components";
+import { theme } from "../../../../theme";
 
 const ContactInfo = () => {
   return (
@@ -38,14 +39,14 @@ const ContactStyled = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 15px;
-  border: 1px solid #efe7d2;
+  border-radius: ${theme.borderRadius.round};
+  border: 1px solid ${theme.colors.borderLine};
 
   h1 {
-    font-size: 35px;
+    font-size: ${theme.fonts.size.P4};
     display: flex;
     justify-content: center;
-    color: #efe7d2;
+    color: ${theme.colors.cream};
   }
 
   p {
@@ -53,7 +54,7 @@ const ContactStyled = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    color: #efe7d2;
+    color: ${theme.colors.cream};
   }
 
   .contact-list {

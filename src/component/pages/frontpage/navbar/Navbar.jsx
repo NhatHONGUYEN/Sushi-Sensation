@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import NavButton from "./NavButton";
 import HamburgerIcon from "../../../../reusible ui/HamburgerIcon";
+import { theme } from "../../../../theme";
 
 export default function Navbar() {
   return (
@@ -15,14 +16,14 @@ export default function Navbar() {
           </NavButton>
         </li>
         <li className="button menu-button">
-          <NavButton to="/menu">Menu</NavButton>
+          <NavButton to="/menu">MENU</NavButton>
         </li>
         <li className="button about-button">
-          <NavButton to="/about">About</NavButton>
+          <NavButton to="/about">ABOUT</NavButton>
         </li>
         <li className="button book-a-table">
           <NavButton primary className="book-button" to="/reservation">
-            Book a Table
+            BOOK A TABLE
           </NavButton>
         </li>
       </ul>
@@ -31,12 +32,12 @@ export default function Navbar() {
 }
 
 const NavbarStyled = styled.nav`
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: ${theme.shadows.strong};
   border-radius: 10px;
   position: absolute;
   top: 5vh;
   left: 5vh;
-  width: 435px;
+  width: 480px;
   height: 50px;
   z-index: 1000;
 
@@ -46,29 +47,44 @@ const NavbarStyled = styled.nav`
     align-items: center;
     list-style: none;
     height: 100%;
-    width: 100%;
 
     .menu-button a,
     .about-button a {
+      padding: 10px 10px;
       border: 1px solid transparent;
+      font-size: ${theme.fonts.size.XS};
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
+        border-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    }
+
+    .about-button a {
+      transition-duration: 0.5s;
     }
 
     .menu-button:hover a,
     .about-button:hover a {
-      border: 1px solid #efe7d2;
+      border: 1px solid ${theme.colors.borderLine};
     }
 
     li {
-      margin-right: 1rem;
+      margin: 10px;
     }
 
     .qitchen-from-navbar a {
-      font-size: 24px;
+      font-size: ${theme.fonts.size.P3};
       border: none;
     }
 
     .book-button {
-      border: 1px solid #efe7d2;
+      border: 1px solid ${theme.colors.borderLine};
+      font-size: ${theme.fonts.size.XS};
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
+        background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+      padding: 10px 10px;
+
+      &:hover {
+        background-color: rgba(239, 231, 210, 0.1);
+      }
     }
   }
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../theme";
 
 export const Button = ({ children, ...props }) => {
   return <ButtonStyled {...props}>{children}</ButtonStyled>;
@@ -10,23 +11,18 @@ const ButtonStyled = styled.button`
   right: 0;
   bottom: 0;
   cursor: pointer;
-  background: black;
-  color: #efe7d2;
-  width: 170px;
-  height: 30px;
-  border-top-left-radius: 20px;
+  height: 15%;
+  color: ${theme.colors.cream};
+  background-color: rgba(0, 0, 0, 0.9);
+  border-top-left-radius: ${theme.borderRadius.round};
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
-  transform: scale(1);
-  transition: transform 0.5s ease-in-out;
+  font-size: ${theme.fonts.size.SM};
+  padding-left: 2%;
 
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  .spacer {
-    margin-right: 10px;
+  .icon {
+    margin: 10px;
+    font-size: 1.5rem;
   }
 `;

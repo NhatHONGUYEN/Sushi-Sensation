@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { FiArrowUpCircle } from "react-icons/fi";
 import styled from "styled-components";
+import { theme } from "../../../../../theme";
 
 export const MenuNavigation = ({ sections, scrollToSection }) => {
   const navRef = useRef(null);
@@ -16,7 +17,7 @@ export const MenuNavigation = ({ sections, scrollToSection }) => {
       {sections.map((section) => (
         <a
           key={section.name}
-          href={`#${section.name.toLowerCase()}`}
+          href={`#${section.name}`}
           onClick={(event) => {
             event.preventDefault();
             scrollToSection(section.ref);
@@ -41,11 +42,17 @@ const MenuNavigationStyled = styled.div`
   a {
     margin-right: 5px;
     padding: 5px 10px;
-    border: 1px solid white;
-    color: #efe7d2;
+    border: 1px solid ${theme.colors.borderLine};
+    color: ${theme.colors.cream};
     border-radius: 5px;
     text-decoration: none;
     font-size: 14px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
+      border-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+    &:hover {
+      border: 1px solid rgba(239, 221, 114, 0.4);
+    }
   }
 `;
 
@@ -55,7 +62,12 @@ const ScrollToTopButton = styled.button`
   right: 2rem;
   cursor: pointer;
   font-size: 2rem;
-  color: #efe7d2;
+  color: ${theme.colors.cream};
   background: none;
   border: none;
+  transition: transform 1s ease-in-out;
+
+  &:hover {
+    transform: translateY(-20px);
+  }
 `;

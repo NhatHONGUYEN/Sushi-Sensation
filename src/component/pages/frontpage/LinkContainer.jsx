@@ -8,19 +8,19 @@ export default function LinkContainer() {
         to="/menu"
         imgSrc="/serve_plate.jpg"
         alt="serve_plate"
-        label="Menu"
+        label="MENU"
       />
       <LinkItem
         to="/reservation"
         imgSrc="/women_waiting.jpg"
         alt="women_waiting"
-        label="Reservation"
+        label="RESERVATION"
       />
       <LinkItem
         to="/about"
         imgSrc="/restaurant_place.jpg"
         alt="restaurant_place"
-        label="Our Story"
+        label="OUR STORY"
       />
     </LinkContainerStyled>
   );

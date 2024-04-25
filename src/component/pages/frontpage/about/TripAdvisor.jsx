@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../../../theme";
 
 export default function TripAdvisor() {
   return (
@@ -34,8 +35,8 @@ const TripAdvisorStyled = styled.div`
   }
 
   .trip-satisfaction {
-    border-radius: 15px;
-    border: 1px solid #efe7d2;
+    border-radius: ${theme.borderRadius.round};
+    border: 1px solid ${theme.colors.borderLine};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,17 +44,16 @@ const TripAdvisorStyled = styled.div`
     text-align: center;
     height: 100%;
     width: 100%;
-    border-radius: 15px;
     padding-bottom: 10px;
 
     h2 {
-      font-size: 20px;
-      color: #efe7d2;
+      font-size: ${theme.fonts.size.P2};
+      color: ${theme.colors.cream};
     }
 
     p {
-      font-size: 10px;
-      color: #efe7d2;
+      font-size: ${theme.fonts.size.XXS};
+      color: ${theme.colors.cream};
     }
   }
 `;
