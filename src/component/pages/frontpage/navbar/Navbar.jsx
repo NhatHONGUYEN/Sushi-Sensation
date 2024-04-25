@@ -37,7 +37,7 @@ const NavbarStyled = styled.nav`
   position: absolute;
   top: 5vh;
   left: 5vh;
-  width: 500px;
+  width: 480px;
   height: 50px;
   z-index: 1000;
 

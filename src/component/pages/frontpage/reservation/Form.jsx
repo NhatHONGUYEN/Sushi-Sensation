@@ -78,7 +78,7 @@ export default function Form() {
       </div>
 
       <button className="button-reservation" type="submit">
-        Reserve
+        RESERVE
       </button>
     </FormContainerStyled>
   );
@@ -142,5 +142,13 @@ const FormContainerStyled = styled.form`
     border: none;
     border-radius: ${theme.borderRadius.smallRound};
     cursor: pointer;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
+      background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+    &:hover {
+      background: transparent;
+      border: 1px solid ${theme.colors.cream};
+      color: ${theme.colors.cream};
+    }
   }
 `;
