@@ -20,4 +20,16 @@ const ReservationStyled = styled.div`
   position: relative;
   padding: 10px;
   gap: 10px;
+
+  @media (min-width: 768px) and (max-width: 1042px) {
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    overflow: auto;
+    gap: 20px;
+    padding: 20px;
+  }
 `;

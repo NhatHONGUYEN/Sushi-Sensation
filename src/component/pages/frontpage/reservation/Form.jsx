@@ -105,6 +105,7 @@ const FormContainerStyled = styled.form`
   }
 
   .select-container {
+    width: 70%;
     select,
     input[type="date"] {
       padding: 0.5rem;
@@ -149,6 +150,24 @@ const FormContainerStyled = styled.form`
       background: transparent;
       border: 1px solid ${theme.colors.cream};
       color: ${theme.colors.cream};
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1042px) {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media (max-width: 430px) {
+    width: 100%;
+    padding: 5vh 0;
+
+    .select-container {
+      width: 47px;
     }
   }
 `;
