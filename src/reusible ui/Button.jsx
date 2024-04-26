@@ -11,7 +11,7 @@ const ButtonStyled = styled.button`
   right: 0;
   bottom: 0;
   cursor: pointer;
-  height: 15%;
+  height: 40px;
   color: ${theme.colors.cream};
   background-color: rgba(0, 0, 0, 0.9);
   border-top-left-radius: ${theme.borderRadius.round};

@@ -31,4 +31,8 @@ const LinkContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 767px) {
+    gap: 10px;
+  }
 `;

@@ -87,4 +87,16 @@ const NavbarStyled = styled.nav`
       }
     }
   }
+  /* Pour les téléphones */
+  @media (max-width: 767px) {
+    width: 330px;
+    left: 50%;
+    transform: translateX(-50%);
+    ul {
+      .menu-button,
+      .about-button {
+        display: none;
+      }
+    }
+  }
 `;
