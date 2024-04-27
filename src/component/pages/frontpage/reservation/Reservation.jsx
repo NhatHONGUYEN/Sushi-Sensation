@@ -15,7 +15,6 @@ export default function Reservation() {
 
 const ReservationStyled = styled.div`
   height: 100vh;
-  width: 100vw;
   display: flex;
   position: relative;
   padding: 10px;
