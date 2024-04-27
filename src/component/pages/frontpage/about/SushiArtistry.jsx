@@ -61,7 +61,16 @@ const SushiArtistryStyled = styled.div`
     img {
       width: 100%;
       position: relative;
-      top: -20%;
+    }
+  }
+
+  @media (max-width: 554px) {
+    .image-container {
+      display: none;
+    }
+
+    .sushi-artistry {
+      width: 100%;
     }
   }
 `;

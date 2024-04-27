@@ -27,7 +27,4 @@ const MenuStyled = styled.div`
   position: relative;
   padding: 10px;
   gap: 10px;
-
-  @media (max-width: 743px) {
-  }
 `;
