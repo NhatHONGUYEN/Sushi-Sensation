@@ -28,6 +28,6 @@ const MenuStyled = styled.div`
   padding: 10px;
   gap: 10px;
 
-  @media (max-width: 1034px) {
+  @media (max-width: 743px) {
   }
 `;

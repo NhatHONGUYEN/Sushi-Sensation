@@ -64,15 +64,60 @@ const MenuItemStyled = styled.div`
 
   @media (min-width: 1036px) and (max-width: 1500px) {
     display: flex;
-    flex-direction: column;
 
     img {
       height: 100px;
       width: 150px;
-      margin: 100px 0;
+    }
+    .item_info {
+      margin-left: 20px;
+
+      .item_title {
+        font-size: 15px;
+        justify-content: center;
+        width: 350px;
+
+        .item_price {
+        }
+      }
+
+      .item_description {
+        width: 300px;
+      }
     }
   }
 
-  @media (max-width: 1034px) {
+  @media (max-width: 743px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    img {
+      height: 100px;
+      width: 150px;
+      margin: 50px 0;
+    }
+    .item_info {
+      margin-left: 0;
+
+      .item_title {
+        font-size: 15px;
+        justify-content: center;
+
+        .dots {
+          display: none;
+        }
+
+        .item_price {
+          margin-right: 0;
+          margin-left: 25px;
+        }
+      }
+
+      .item_description {
+        width: 200px;
+        margin-left: 150px;
+      }
+    }
   }
 `;

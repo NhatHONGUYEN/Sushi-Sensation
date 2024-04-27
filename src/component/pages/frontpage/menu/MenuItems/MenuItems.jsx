@@ -62,6 +62,6 @@ const MenuItemsStyled = styled.div`
   }
 
   @media (max-width: 1034px) {
-    padding-top: 5vh;
+    padding-top: 20vh;
   }
 `;
