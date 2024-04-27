@@ -20,6 +20,8 @@ const MenuItemStyled = styled.div`
   align-items: center;
   margin-bottom: 1rem;
   justify-content: center;
+  width: 100%;
+
   img {
     height: 100px;
     width: 150px;
@@ -53,10 +55,24 @@ const MenuItemStyled = styled.div`
     }
 
     .item_description {
-      max-width: 400px;
+      width: 400px;
       font-size: ${theme.fonts.size.XS};
       color: ${theme.colors.cream};
       margin-top: 10px;
     }
+  }
+
+  @media (min-width: 1036px) and (max-width: 1500px) {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      height: 100px;
+      width: 150px;
+      margin: 100px 0;
+    }
+  }
+
+  @media (max-width: 1034px) {
   }
 `;

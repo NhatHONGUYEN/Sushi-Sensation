@@ -7,7 +7,7 @@ export default function ReservationImage() {
       className="reservation-image
   "
     >
-      <img src="image-for-reservation.jpg" alt="" />
+      <img src="image-for-reservation.jpg" alt="image-for-reservation.jpg" />
       <div className="book-a-table">
         BOOK <br /> A TABLE
       </div>

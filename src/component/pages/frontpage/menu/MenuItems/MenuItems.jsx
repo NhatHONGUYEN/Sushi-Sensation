@@ -60,4 +60,8 @@ const MenuItemsStyled = styled.div`
     justify-content: center;
     display: flex;
   }
+
+  @media (max-width: 1034px) {
+    padding-top: 5vh;
+  }
 `;

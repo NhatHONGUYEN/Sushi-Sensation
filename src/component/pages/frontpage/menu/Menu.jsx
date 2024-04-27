@@ -21,10 +21,13 @@ export default function Menu() {
   );
 }
 const MenuStyled = styled.div`
-  justify-content: space-around;
   height: 100vh;
+  width: 100%;
   display: flex;
   position: relative;
   padding: 10px;
   gap: 10px;
+
+  @media (max-width: 1034px) {
+  }
 `;
