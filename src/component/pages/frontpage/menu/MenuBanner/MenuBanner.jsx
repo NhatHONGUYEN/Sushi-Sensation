@@ -4,7 +4,7 @@ import { theme } from "../../../../../theme";
 export default function MenuBanner({ text }) {
   return (
     <MenuBannerStyled>
-      <img src="/image_bowl_left_menu.jpg" alt="image_bowl_left_menu" />
+      <img src="/image-left-bowl.jpg" alt="image_bowl_left_menu" />
       <div className="menu_text">{text}</div>
     </MenuBannerStyled>
   );
@@ -18,6 +18,7 @@ const MenuBannerStyled = styled.div`
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: ${theme.borderRadius.extraRound};
   }
 

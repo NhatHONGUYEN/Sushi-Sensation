@@ -7,7 +7,7 @@ export default function ReservationImage() {
       className="reservation-image
   "
     >
-      <img src="image-for-reservation.jpg" alt="image-for-reservation.jpg" />
+      <img src="/image-for-reservation.jpg" alt="image-for-reservation.jpg" />
       <div className="book-a-table">
         BOOK <br /> A TABLE
       </div>
@@ -21,6 +21,7 @@ const ReservationImageStyled = styled.div`
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: ${theme.borderRadius.extraRound};
   }
 

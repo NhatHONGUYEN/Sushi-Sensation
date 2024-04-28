@@ -15,7 +15,7 @@ export default function Menu() {
   return (
     <MenuStyled>
       <Navbar />
-      <MenuBanner image="/image_bowl_left_menu.jpg" text="MENU" />
+      <MenuBanner text="MENU" />
       <MenuItems sections={sectionRefs} scrollToSection={scrollToSection} />
     </MenuStyled>
   );

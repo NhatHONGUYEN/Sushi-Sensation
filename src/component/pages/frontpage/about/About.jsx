@@ -10,7 +10,7 @@ export default function About() {
     <AboutStyled>
       <Navbar />
       <div className="image-left">
-        <img src="/image_for_about.jpg" alt="image_for_about" />
+        <img src="/image_for_about1.jpg" alt="image_for_about" />
       </div>
       <div className="about-text">ABOUT</div>
       <div className="our-story-description">
@@ -34,6 +34,7 @@ const AboutStyled = styled.div`
     img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
       border-radius: ${theme.borderRadius.extraRound};
     }
   }
@@ -48,9 +49,7 @@ const AboutStyled = styled.div`
   }
 
   .our-story-description {
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+    width: 50%;
   }
 
   @media (min-width: 768px) and (max-width: 1054px) {
@@ -63,6 +62,9 @@ const AboutStyled = styled.div`
       font-size: 6rem;
       position: absolute;
     }
+    .our-story-description {
+      width: 100%;
+    }
   }
 
   @media (min-width: 554px) and (max-width: 767px) {
@@ -70,10 +72,10 @@ const AboutStyled = styled.div`
     overflow-y: scroll;
 
     .about-text {
-      bottom: 60%;
-      left: 3%;
-      font-size: 60px;
-      position: absolute;
+      display: none;
+    }
+    .our-story-description {
+      width: 100%;
     }
   }
 
@@ -83,6 +85,9 @@ const AboutStyled = styled.div`
 
     .about-text {
       display: none;
+    }
+    .our-story-description {
+      width: 100%;
     }
   }
 `;
