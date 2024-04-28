@@ -37,4 +37,20 @@ const ReservationBoxStyled = styled.div`
     color: ${theme.colors.cream};
     margin: 5% 0 10% 0;
   }
+
+  @media (min-width: 768px) and (max-width: 1042px) {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20vh;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 10vh 20px 10vh 20px;
+  }
+
+  @media (max-width: 430px) {
+    width: 100%;
+    padding: 5vh;
+  }
 `;

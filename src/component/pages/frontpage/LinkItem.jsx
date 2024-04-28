@@ -54,4 +54,9 @@ const LinkItemStyled = styled.div`
     transform: translateX(5px);
     opacity: 1;
   }
+
+  /* Pour les téléphones */
+  @media (max-width: 767px) {
+    height: 60vh;
+  }
 `;

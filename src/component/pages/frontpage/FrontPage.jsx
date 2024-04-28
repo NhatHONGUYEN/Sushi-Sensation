@@ -21,4 +21,23 @@ const FrontPageStyled = styled.div`
   position: relative;
   padding: 10px;
   gap: 10px;
+
+  /* Pour les écrans d'ordinateur */
+  @media (min-width: 1024px) {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  /* Pour les tablettes */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  /* Pour les téléphones */
+  @media (max-width: 767px) {
+    flex-direction: column;
+
+    overflow: auto;
+  }
 `;

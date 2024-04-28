@@ -33,4 +33,26 @@ const VideoContainerStyled = styled.div`
     color: ${theme.colors.cream};
     letter-spacing: ${theme.spacing.xxs};
   }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 100%;
+
+    .video {
+      width: 100%;
+      height: 80vh;
+      border-radius: ${theme.borderRadius.extraRound};
+    }
+
+    .title {
+      position: absolute;
+      text-align: center;
+      bottom: 21%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 40px;
+      color: ${theme.colors.cream};
+      letter-spacing: ${theme.spacing.xxs};
+    }
+  }
 `;
