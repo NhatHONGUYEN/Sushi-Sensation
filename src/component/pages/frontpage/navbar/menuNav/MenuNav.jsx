@@ -57,7 +57,7 @@ const MenuNavStyled = styled.div`
 
         a {
           text-decoration: none;
-          color: ${theme.colors.cream};
+          color: ${theme.colors.white};
           font-size: ${theme.fonts.size.P5};
           transition: color 0.5s ease-in-out;
 
