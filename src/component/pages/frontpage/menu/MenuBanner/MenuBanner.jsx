@@ -33,6 +33,6 @@ const MenuBannerStyled = styled.div`
   }
 
   @media (max-width: 1034px) {
-    display: none; // masquez le MenuBanner lorsque la largeur de l'écran est inférieure ou égale à 1034px
+    display: none;
   }
 `;

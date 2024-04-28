@@ -32,7 +32,7 @@ const MenuItemStyled = styled.div`
 
     .item_title {
       width: 500px;
-      font-size: 17px;
+      font-size: ${theme.fonts.size.P0};
       display: flex;
       justify-content: space-between;
       color: ${theme.colors.cream};
@@ -73,7 +73,7 @@ const MenuItemStyled = styled.div`
       margin-left: 20px;
 
       .item_title {
-        font-size: 15px;
+        font-size: ${theme.fonts.size.SM};
         justify-content: center;
         width: 350px;
 
@@ -101,7 +101,7 @@ const MenuItemStyled = styled.div`
       margin-left: 0;
 
       .item_title {
-        font-size: 15px;
+        font-size: ${theme.fonts.size.SM};
         justify-content: center;
 
         .dots {

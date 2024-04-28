@@ -64,11 +64,11 @@ const TripAdvisorStyled = styled.div`
     }
     .trip-satisfaction {
       h2 {
-        font-size: 10px;
+        font-size: ${theme.fonts.size.XXS};
       }
 
       p {
-        font-size: 5px;
+        font-size: ${theme.fonts.size.XXXS};
       }
     }
   }
