@@ -15,14 +15,14 @@ export default function Menu() {
   return (
     <MenuStyled>
       <Navbar />
-      <MenuBanner image="/image_bowl_left_menu.jpg" text="MENU" />
+      <MenuBanner text="MENU" />
       <MenuItems sections={sectionRefs} scrollToSection={scrollToSection} />
     </MenuStyled>
   );
 }
 const MenuStyled = styled.div`
-  justify-content: space-around;
   height: 100vh;
+  width: 100%;
   display: flex;
   position: relative;
   padding: 10px;

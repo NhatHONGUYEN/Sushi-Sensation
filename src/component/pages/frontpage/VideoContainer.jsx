@@ -8,7 +8,6 @@ export default function VideoContainer() {
   return (
     <VideoContainerStyled className="video-container">
       <video className="video" src={VIDEO_SRC} loop autoPlay muted></video>
-
       <h1 className="title">
         SUSHI <br /> SENSATION
       </h1>
@@ -50,7 +49,7 @@ const VideoContainerStyled = styled.div`
       bottom: 21%;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 40px;
+      font-size: ${theme.colors.P2 * 2};
       color: ${theme.colors.cream};
       letter-spacing: ${theme.spacing.xxs};
     }

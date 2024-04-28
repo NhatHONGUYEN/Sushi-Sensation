@@ -56,4 +56,20 @@ const TripAdvisorStyled = styled.div`
       color: ${theme.colors.cream};
     }
   }
+
+  @media (max-width: 554px) {
+    img {
+      height: 20px;
+      width: 40px;
+    }
+    .trip-satisfaction {
+      h2 {
+        font-size: ${theme.fonts.size.XXS};
+      }
+
+      p {
+        font-size: ${theme.fonts.size.XXXS};
+      }
+    }
+  }
 `;

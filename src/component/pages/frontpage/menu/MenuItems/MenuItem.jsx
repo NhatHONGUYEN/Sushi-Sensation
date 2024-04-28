@@ -20,6 +20,8 @@ const MenuItemStyled = styled.div`
   align-items: center;
   margin-bottom: 1rem;
   justify-content: center;
+  width: 100%;
+
   img {
     height: 100px;
     width: 150px;
@@ -30,7 +32,7 @@ const MenuItemStyled = styled.div`
 
     .item_title {
       width: 500px;
-      font-size: 17px;
+      font-size: ${theme.fonts.size.P0};
       display: flex;
       justify-content: space-between;
       color: ${theme.colors.cream};
@@ -53,10 +55,69 @@ const MenuItemStyled = styled.div`
     }
 
     .item_description {
-      max-width: 400px;
+      width: 400px;
       font-size: ${theme.fonts.size.XS};
       color: ${theme.colors.cream};
       margin-top: 10px;
+    }
+  }
+
+  @media (min-width: 1036px) and (max-width: 1500px) {
+    display: flex;
+
+    img {
+      height: 100px;
+      width: 150px;
+    }
+    .item_info {
+      margin-left: 20px;
+
+      .item_title {
+        font-size: ${theme.fonts.size.SM};
+        justify-content: center;
+        width: 350px;
+
+        .item_price {
+        }
+      }
+
+      .item_description {
+        width: 300px;
+      }
+    }
+  }
+
+  @media (max-width: 743px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    img {
+      height: 100px;
+      width: 150px;
+      margin: 50px 0;
+    }
+    .item_info {
+      margin-left: 0;
+
+      .item_title {
+        font-size: ${theme.fonts.size.SM};
+        justify-content: center;
+
+        .dots {
+          display: none;
+        }
+
+        .item_price {
+          margin-right: 0;
+          margin-left: 25px;
+        }
+      }
+
+      .item_description {
+        width: 200px;
+        margin-left: 150px;
+      }
     }
   }
 `;

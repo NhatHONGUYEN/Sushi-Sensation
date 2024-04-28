@@ -3,14 +3,15 @@ import Navbar from "../navbar/Navbar";
 import SushiArtistry from "./SushiArtistry";
 import TripAdvisor from "./TripAdvisor";
 import OurStory from "./OurStory";
-import imageForAbout from "/image_for_about.jpg";
 import { theme } from "../../../../theme";
 
 export default function About() {
   return (
     <AboutStyled>
       <Navbar />
-      <div className="image-for-about"></div>
+      <div className="image-left">
+        <img src="/image_for_about1.jpg" alt="image_for_about" />
+      </div>
       <div className="about-text">ABOUT</div>
       <div className="our-story-description">
         <SushiArtistry />
@@ -22,20 +23,20 @@ export default function About() {
 }
 
 const AboutStyled = styled.div`
-  justify-content: space-around;
   height: 100vh;
+  width: 100%;
   display: flex;
   position: relative;
   padding: 10px;
   gap: 10px;
 
-  .image-for-about {
-    width: 50%;
-    background-image: url(${imageForAbout});
-    background-position: center left 50;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: ${theme.borderRadius.extraRound};
+  .image-left {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: ${theme.borderRadius.extraRound};
+    }
   }
 
   .about-text {
@@ -48,8 +49,45 @@ const AboutStyled = styled.div`
   }
 
   .our-story-description {
-    flex-direction: column;
-    justify-content: space-between;
     width: 50%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1054px) {
+    flex-direction: column;
+    overflow-y: scroll;
+
+    .about-text {
+      bottom: 45%;
+      left: 3%;
+      font-size: 6rem;
+      position: absolute;
+    }
+    .our-story-description {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 554px) and (max-width: 767px) {
+    flex-direction: column;
+    overflow-y: scroll;
+
+    .about-text {
+      display: none;
+    }
+    .our-story-description {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 554px) {
+    flex-direction: column;
+    overflow-y: scroll;
+
+    .about-text {
+      display: none;
+    }
+    .our-story-description {
+      width: 100%;
+    }
   }
 `;

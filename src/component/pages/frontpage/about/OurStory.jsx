@@ -39,7 +39,6 @@ const OurStoryStyled = styled.div`
     border-radius: ${theme.borderRadius.round};
     border: 1px solid ${theme.colors.borderLine};
     width: 60%;
-
     color: ${theme.colors.cream};
 
     h1 {
@@ -60,6 +59,20 @@ const OurStoryStyled = styled.div`
 
     img {
       width: 100%;
+    }
+  }
+
+  @media (max-width: 554px) {
+    .image-container {
+      display: none;
+    }
+
+    .cooking-our-story {
+      width: 100%;
+
+      h1 {
+        padding-bottom: 20px;
+      }
     }
   }
 `;

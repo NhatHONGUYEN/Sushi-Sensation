@@ -51,6 +51,5 @@ const ReservationBoxStyled = styled.div`
 
   @media (max-width: 430px) {
     width: 100%;
-    padding: 5vh;
   }
 `;

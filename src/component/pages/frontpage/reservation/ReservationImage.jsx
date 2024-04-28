@@ -7,7 +7,7 @@ export default function ReservationImage() {
       className="reservation-image
   "
     >
-      <img src="image-for-reservation.jpg" alt="" />
+      <img src="/image-for-reservation.jpg" alt="image-for-reservation.jpg" />
       <div className="book-a-table">
         BOOK <br /> A TABLE
       </div>
@@ -19,9 +19,9 @@ const ReservationImageStyled = styled.div`
   width: 50%;
 
   img {
-    object-fit: cover;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: ${theme.borderRadius.extraRound};
   }
 
@@ -41,37 +41,21 @@ const ReservationImageStyled = styled.div`
 
     img {
       width: 100%;
-
       border-radius: ${theme.borderRadius.extraRound};
     }
   }
 
-  @media (max-width: 767px) {
+  @media (min-width: 431px) and (max-width: 767px) {
     width: 100%;
-    height: 80vh;
-
     .book-a-table {
-      position: absolute;
-      text-align: center;
-      bottom: 21%;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 40px;
-      color: ${theme.colors.cream};
-      letter-spacing: ${theme.spacing.xxs};
+      display: none;
     }
   }
 
   @media (max-width: 430px) {
     width: 100%;
-    height: 80vh;
-
     .book-a-table {
-      position: absolute;
-      text-align: center;
-      bottom: 36%;
-      left: 50%;
-      transform: translateX(-50%);
+      display: none;
     }
   }
 `;

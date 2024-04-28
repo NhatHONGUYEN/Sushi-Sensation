@@ -33,7 +33,7 @@ export default function Navbar() {
 
 const NavbarStyled = styled.nav`
   background-color: ${theme.shadows.strong};
-  border-radius: 10px;
+  border-radius: ${theme.borderRadius.smallRound * 2};
   position: absolute;
   top: 5vh;
   left: 5vh;

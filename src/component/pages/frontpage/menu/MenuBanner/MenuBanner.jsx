@@ -1,26 +1,25 @@
 import styled from "styled-components";
 import { theme } from "../../../../../theme";
 
-export default function MenuBanner({ image, text }) {
+export default function MenuBanner({ text }) {
   return (
-    <MenuBannerStyled image={image}>
-      <img src={image} alt="Menu" />
+    <MenuBannerStyled>
+      <img src="/image-left-bowl.jpg" alt="image_bowl_left_menu" />
       <div className="menu_text">{text}</div>
     </MenuBannerStyled>
   );
 }
 
 const MenuBannerStyled = styled.div`
-  flex: 1;
-  background-image: url(${(props) => props.image});
-  background-position: center top 20%;
-  background-size: cover;
-  background-repeat: no-repeat;
   border-radius: ${theme.borderRadius.extraRound};
   position: relative;
+  width: 50%;
 
   img {
-    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: ${theme.borderRadius.extraRound};
   }
 
   .menu_text {
@@ -31,5 +30,9 @@ const MenuBannerStyled = styled.div`
     color: ${theme.colors.cream};
     font-family: forum;
     letter-spacing: ${theme.spacing.xxs};
+  }
+
+  @media (max-width: 1034px) {
+    display: none;
   }
 `;
