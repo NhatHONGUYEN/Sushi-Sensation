@@ -13,7 +13,7 @@ const ButtonStyled = styled.button`
   cursor: pointer;
   height: 40px;
   color: ${theme.colors.cream};
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   border-top-left-radius: ${theme.borderRadius.round};
   display: flex;
   align-items: center;
