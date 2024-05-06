@@ -1,6 +1,6 @@
 .fade-right-enter {
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateX(20%);
   transition: all 1s ease-in-out;
 }
 
@@ -19,5 +19,5 @@
 .fade-right-exit-active {
   transition: opacity 1s, transform 1s;
   opacity: 0;
-  transform: translateX(-200%);
+  transform: translateX(-50%);
 }
