@@ -65,9 +65,11 @@ const ScrollToTopButton = styled.button`
   color: ${theme.colors.cream};
   background: none;
   border: none;
-  transition: transform 1s ease-in-out;
+  opacity: 0.5;
+  transition: transform 1s ease-in-out, opacity 0.5s;
 
   &:hover {
     transform: translateY(-20px);
+    opacity: 1;
   }
 `;
